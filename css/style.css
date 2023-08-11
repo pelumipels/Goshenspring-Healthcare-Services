@@ -1,0 +1,1666 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Kadwa', serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style: none;
+}
+.goshenspringWeb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3FDF3;
+    width: auto;
+}
+header {
+    width: 90%;
+    display: flex;
+    padding: 8px 0px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+.top .logo2,
+.nav-bar nav .innavbar .logo1 {
+    width: 221px;
+    height: 40px;
+    justify-content: center ;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+}
+.top .logo2 .image1, .image2 {
+    width: 35px; 
+    height: 35px;
+}
+.top .cntct {
+    display: none;
+}
+.top .logo2 .gshcs,
+.nav-bar nav .innavbar .logo1 .gshcs2 {
+    width: 181px;
+    height: 41px;
+    color: #008000;
+    font-size: 15px;
+    font-family: 'Kadwa', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+.nav_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+.nav_overlay.active {
+    /* position: fixed; */
+    display: block;
+}
+.nav-bar {
+    width: auto;
+}
+.nav-bar nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    text-align: center; 
+    transition: 0.5s ease-in-out all;
+    transform: translateX(100%);
+    overflow-x: hidden;
+    z-index: 2;
+}
+.nav-bar nav .innavbar {
+    width: 100%;
+    top: 0;
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.nav-bar nav .innavbar .logo1 {
+    width: 200px;
+    align-self: center;
+}
+.nav-bar nav .innavbar .logo1 .gshcs2 {
+    text-align: start;
+}
+.nav-bar nav .innavbar .closeButton {
+    width: 30px;
+    height: 41px;
+    align-self: center;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    display: flex
+}
+.nav-bar nav .innavbar .closeButton .x {
+    color: #FF0000;
+    font-size: 20px;
+    font-family: Roboto Flex;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 20px;
+    word-wrap: break-word
+}
+.nav-bar nav .innavbar .closeButton .close {
+    color: #FF0000;
+    font-size: 10px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 10px;
+    word-wrap: break-word
+}
+.nav-bar nav .nav-list {
+    position: relative;
+    background-color: #008000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    height: 100%;
+    top: 0;
+}
+.nav-bar nav .nav-list li {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar nav .nav-list li a {
+    color: white;
+    font-size: 14px;
+    font-family: Kadwa;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 13px;
+    word-wrap: break-word
+}
+.nav-bar nav .nav-list li:first-child {
+    margin: 30px auto 0 auto;
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+}
+.nav-bar nav .nav-list li:first-child a {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    color: black;
+}
+.nav-bar nav.nav-toggle {
+    transform: translateX(0%);
+}
+.nav-bar menu.close {
+    transform: translateX(0%);
+}
+.nav-bar .hamburgerMenu {
+    width: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    cursor: pointer;
+    align-items: flex-end;
+}
+.nav-bar .hamburgerMenu .menu {
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.nav-bar .hamburgerMenu .menu .icon {
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    position: relative;
+    transition: .5s ease all;
+}
+.nav-bar .hamburgerMenu .menu .icon::before,
+.nav-bar .hamburgerMenu .menu .icon::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    transition: .5s ease all;
+}
+.nav-bar .hamburgerMenu .menu .icon::before {
+    top: -5px;
+    left: 0;
+}
+.nav-bar .hamburgerMenu .menu .icon::after {
+    bottom: -5px;
+    left: 0;
+}
+.nav-bar .hamburgerMenu .menu2 {
+    line-height: 100%;
+    cursor: pointer;
+}
+.body1 {
+    width: 90%;
+}
+section .heroSection {
+    width: 100%;
+    height: 280px;
+    padding: 56px 0 45px 0;
+    background: linear-gradient(0deg, rgba(211, 211, 211, 0.3) 0%, rgba(211, 211, 211, 0.3) 100%), url(../images/def585db45666696f3864f5cfc73bc0b.jpeg), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-position: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 33px;
+    display: flex;
+}
+section .heroSection .heroCopy {
+    position: relative;
+    margin-left: 15px;
+    height: 193px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 13px;
+    display: inline-flex
+}
+section .heroSection .heroCopy .header {
+    width: 280px;
+}
+section .heroSection .heroCopy .header .chance {
+    color: black;
+    font-size: 25px;
+    font-family: Kadwa;
+    font-weight: 1000;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+section .heroSection .heroCopy .header .qualityLife {
+    color: #054B05;
+    font-size: 25px;
+    font-family: Kadwa;
+    font-weight: 1000;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+section .heroSection .heroCopy .subHeader {
+    width: 243px;
+    color: black;
+    font-size: 14px;
+    font-family: Kadwa;
+    font-weight: 500;
+    line-height: 20px;
+    word-wrap: break-word
+}
+section .heroSection .button {
+    width: 195px;
+    height: 50px;
+    margin-left: 15px;
+    background: #FDDA0D;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    display: inline-flex
+}
+section .heroSection .button .learnMore {
+    color: black;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word
+}
+section .line3 {
+    width: auto;
+    height: 100%;
+    border: 0.1rem #FDDA0D solid
+}
+.body2 {
+    width: 90%;
+}
+section .welcomeToGoshenspring {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+    background: white
+}
+section .welcomeToGoshenspring .left {
+    margin-left: 20px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+section .welcomeToGoshenspring .left .headerText {
+    width: 245px;
+    height: auto;
+}
+section .welcomeToGoshenspring .left .headerText .welcome{
+    color: black;
+    font-size: 20px;
+    font-family: Kadwa;
+    font-weight: 700;
+    line-height: 25px;
+    word-wrap: break-word
+}
+section .welcomeToGoshenspring .left .headerText .ghs {
+    color: #008000;
+    font-size: 20px;
+    font-family: Kadwa;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 25px;
+    word-wrap: break-word
+}
+section .welcomeToGoshenspring .left .copy  {
+    margin-top: 20px;
+    width: 100%;
+    color: black;
+    font-size: 14px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+.tertiaryButton  {
+    width: 170px;
+    height: 100%;
+    line-height: 100%;
+    margin-top: 20px;
+    display: flex;
+    cursor: pointer;
+}
+.tertiaryButton .readMore  {
+    color: #FDDA0D;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    text-transform: uppercase;
+    align-self: center;
+    word-wrap: break-word;
+}
+.tertiaryButton .frame6 {
+    position: relative;
+    right: 6px;
+}
+.tertiaryButton .frame6 .icon1,
+.tertiaryButton .frame6 .icon2,
+.tertiaryButton .frame6 .icon3 {
+    width: 22px;
+    height: 18px;
+}
+.tertiaryButton .frame6 .icon2 {
+    position: relative;
+    right: 20px;
+}
+.tertiaryButton .frame6 .icon3 {
+    position: relative;
+    right: 40px;
+}
+section .welcomeToGoshenspring .scheduleAssessmentOverlay  {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.07)
+}
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon  {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 37px auto 0 auto;
+}
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon .icon4  {
+    width: 50px;
+    height: 50px;
+}
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment  {
+    margin-top: 10px;
+    text-align: center;
+}
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .sch  {
+    color: black;
+    font-size: 20px;
+    font-family: Kadwa;
+    font-weight: 700;
+    word-wrap: break-word
+}
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .ass  {
+    color: #008000;
+    font-size: 20px;
+    font-family: Kadwa;
+    font-weight: 700;
+    word-wrap: break-word
+}
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .ourQualityCareIsAResultOfProperAssessmentSetAnAppointmentWithUsToday  {
+    margin-top: 15px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .button  {
+    width: 100%;
+    margin: 30px auto 50px auto;
+    display: inline-flex
+}
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore  {
+    color: black;
+    width: 227px;
+    border-radius: 10px;
+    background: #FDDA0D;
+    margin: 0 auto;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 25px;
+    display: inline-flex;
+    word-wrap: break-word
+}
+.body3 {
+    width: 90%;
+}
+section .line4 {
+    width: auto;
+    height: 100%;
+    border: 0.1rem #FDDA0D solid
+}
+section .whatWeDo {
+    height: auto;
+    background: #008000;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+section .whatWeDo .wwdt {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 30px 0 0 20px;
+}
+section .whatWeDo .wwdt .headerText {
+    width: 88%;
+    position: relative;
+    margin-right: auto;
+    color: white;
+    font-size: 20px;
+    font-family: Kadwa;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word
+}
+section .whatWeDo .wwdt .copy {
+    width: 88%;
+    color: white;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+section .whatWeDo .hgfg {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section .whatWeDo .hgfg .skilledNursing,
+section .whatWeDo .hgfg .homeHealthAid,
+section .whatWeDo .hgfg .physicalTherapy,
+section .whatWeDo .hgfg .medicalSocialWork {
+    width: 300px;
+}
+section .whatWeDo .hgfg .skilledNursing {
+    height: auto;
+    padding-top: 250px;
+    background: linear-gradient(0deg, white 0%, white 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(../images/59a19896503cf22bbee55f334e448fd6.jpeg);
+    background-size: 324px;
+    background-position: 0 -75px;
+    display: inline-flex
+}
+section .whatWeDo .hgfg .skilledNursing .frame15 {
+    width: 100%;
+    height: 50px;
+    align-self: stretch;
+    background: white;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex
+}
+section .whatWeDo .hgfg .skilledNursing .frame15 .sn {
+    color: black;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+section .whatWeDo .hgfg .homeHealthAid {
+    height: auto;
+    padding-top: 250px;
+    background: linear-gradient(0deg, white 0%, white 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(../images/3173373a171eec78968ec7172990345c.jpeg);
+    background-size: 450px;
+    background-position: -65px 0;
+    display: inline-flex
+}
+section .whatWeDo .hgfg .homeHealthAid .frame15 {
+    width: 100%;
+    height: 50px;
+    align-self: stretch;
+    background: white;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex
+}
+section .whatWeDo .hgfg .homeHealthAid .frame15 .hHA {
+    color: black;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+section .whatWeDo .hgfg .physicalTherapy {
+    height: auto;
+    padding-top: 250px;
+    background: linear-gradient(0deg, white 0%, white 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(../images/b2c9a965d29cab8c7c3ef3bdb4b4e971.jpeg);
+    background-position: 0 -85px;
+    background-size: 300px;
+    display: inline-flex
+}
+section .whatWeDo .hgfg .physicalTherapy .frame15 {
+    width: 100%;
+    height: 50px;
+    align-self: stretch;
+    background: white;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex
+}
+section .whatWeDo .hgfg .physicalTherapy .frame15 .pT {
+    color: black;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+section .whatWeDo .hgfg .medicalSocialWork {
+    height: auto;
+    padding-top: 250px;
+    background: linear-gradient(0deg, white 0%, white 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(../images/72441c232307b7f190082203c2a41789.jpeg);
+    background-position: 0 -90px;
+    background-size: 320px;
+    display: inline-flex
+}
+section .whatWeDo .hgfg .medicalSocialWork .frame15 {
+    width: 100%;
+    height: 50px;
+    align-self: stretch;
+    background: white;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex
+}
+section .whatWeDo .hgfg .medicalSocialWork .frame15 .medicalSocialWork {
+    color: black;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+section .whatWeDo .button {
+    width: 202px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0.50px #FDDA0D solid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+    cursor: pointer;
+}
+section .whatWeDo .button .learnMore {
+    color: #FDDA0D;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word
+}
+.body4 {
+    width: 90%;
+}
+section .line5 {
+    width: auto;
+    height: 100%;
+    border: 0.1rem #FDDA0D solid
+}
+section .meetTheTeam {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg,  0%,  100%);
+    background-image: url(../images/df87d90b710a9d400f3297c2d6d60f9f.jpeg);
+    background-size: 450px;
+    background-position: 50% 50%;
+}
+section .meetTheTeam .mTT {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+section .meetTheTeam .mTT .ellipse3 {
+    width: 170px;
+    height: 170px;
+    margin: auto auto;
+    position: relative;
+    background: black;
+    border-radius: 9999px
+}
+section .meetTheTeam .mTT .primaryButton {
+    width: 202px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    background: #FDDA0D;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex
+}
+section .meetTheTeam .primaryButton .learnMore {
+    color: black;
+    font-size: 20px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 35px;
+    word-wrap: break-word
+}
+.body5 {
+    width: 90%;
+}
+section .line6 {
+    width: auto;
+    height: 100%;
+    border: 0.1rem #FDDA0D solid
+}
+section .oCR {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: #F3FDF3
+}
+section .oCR .oC {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+section .oCR .oC .oCt {
+    padding-bottom: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex
+}
+section .oCR .oC .oCt .oCnt {
+    color: black;
+    font-size: 20px;
+    font-family: Kadwa;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word
+}
+section .oCR .oC .oCt .mS {
+    color: #008000;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word
+}
+section .oCR .oC .copy {
+    padding-bottom: 2px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex
+}
+section .oCR .oC .copy .wET{
+    width: auto;
+    color: black;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word
+}
+section .oCR .oC .b5{
+    margin-left: 0;
+}
+section .oCR .sAO {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.07)
+}
+section .oCR .sAO .mail {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 37px auto 0 auto ;
+}
+section .oCR .sAO .mail .icon5 {
+    width: 50px;
+    height: 50px;
+}
+section .oCR .sAO .headerText {
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: Kadwa;
+    font-weight: 700;
+    word-wrap: break-word
+}
+section .oCR .sAO .copy {
+    margin: 25px auto;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+section .oCR .sAO .button {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: inline-flex
+}
+section .oCR .sAO .button .learnMore{
+    color: black;
+    width: 227px;
+    font-size: 16px;
+    background: #FDDA0D;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Kadwa;
+    display: inline-flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word
+}
+.body6 {
+    width: 90%;
+}
+section .line7 {
+    width: auto;
+    height: 100%;
+    border: 0.1rem #FDDA0D solid
+}
+section .feedback {
+    width: 100%;
+    background-image: url(../images/e008509d51bf9c1daa62eefc7bd6c33c.jpeg);
+    background-position: -160px -10px;
+    background-size: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* gap: 1px; */
+    display: inline-flex
+}
+section .feedback .sFB {
+    width: 100%;
+    flex: 1 1 0;
+    padding-top: 53px;
+    padding-bottom: 53px;
+    background: rgba(0, 0, 0, 0.40);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex
+}
+section .feedback .sFB .sAO {
+    width: 100%;
+    height: auto;
+    padding: 40px 0 40px 0;
+    background: white;
+    box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.07);
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    display: flex
+}
+section .feedback .sFB .sAO .bulbIcon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 0 auto;
+    background-image: url(../images/bulb.png);
+    background-size: 50px;
+}
+section .feedback .sFB .sAO .bulbIcon .ellipse4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+    border: 1.50px #008000 solid
+}
+section .feedback .sFB .sAO .headerText {
+    color: black;
+    font-size: 20px;
+    font-family: Kadwa;
+    margin: 0 auto 0 auto;
+    font-weight: 700;
+    word-wrap: break-word
+}
+section .feedback .sFB .sAO .copy {
+    width: 289px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: Kadwa;
+    margin: 0 auto 0 auto;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+section .feedback .sFB .sAO .button {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display: inline-flex
+}
+section .feedback .sFB .sAO .button .learnMore {
+    color: black;
+    font-size: 16px;
+    font-family: Kadwa;
+    width: 247px;
+    border-radius: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 400;
+    justify-content: center;
+    height: 50px;
+    background: #FDDA0D;
+    line-height: 25px;
+    display: inline-flex;
+    word-wrap: break-word
+}
+.body7 {
+    width: 90%;
+}
+footer .footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #F3FDF3;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex
+}
+footer .footer .logo {
+    width: 221px;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    display: inline-flex
+}
+footer .footer .logo .image1 {
+    width: 35px;
+}
+footer .footer .logo .gshs {
+    width: 181px;
+    height: auto;
+    color: #008000;
+    font-size: 15px;
+    font-family: Kadwa;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 20px;
+    word-wrap: break-word
+}
+footer .footer .location {
+    align-self: stretch;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2px;
+    display: inline-flex
+}
+footer .footer .location .locateUsAt {
+    color: black;
+    font-size: 20px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word
+}
+footer .footer .location .address {
+    align-self: stretch;
+    height: 39px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex
+}
+footer .footer .location .address .markerPin{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex
+}
+footer .footer .location .address .markerPin .icon10 {
+    width: 15px;
+    height: 18px;
+}
+footer .footer .location .fvct {
+    width: 294px;
+    color: #333333;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    word-wrap: break-word
+}
+footer .footer .phoneNumber {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: inline-flex
+}
+footer .footer .phoneNumber .callUsOn {
+    color: black;
+    font-size: 20px;
+    font-family: Kadwa;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1px;
+    word-wrap: break-word
+}
+footer .footer .phoneNumber .number {
+    align-self: stretch;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex
+}
+footer .footer .phoneNumber .number .phone {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex
+}
+footer .footer .phoneNumber .number .phone .icon9 {
+    width: 18px;
+    height: 18px;
+}
+footer .footer .phoneNumber .number .num {
+    width: 141px;
+    color: #333333;
+    font-size: 16px;
+    font-family: Kadwa;
+    font-weight: 400;
+    word-wrap: break-word
+}
+footer .nav-bar {
+    display: none;
+}
+@media (max-width: 877px) {
+    section .heroSection1 {
+        display: none;
+    }
+    .nav-bar nav .nav-list li:first-child a {
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media (min-width: 250px) {
+    section .heroSection .heroCopy {
+        width: 270px;
+    }
+    section .heroSection .heroCopy .header .chance,
+    section .heroSection .heroCopy .header .qualityLife {
+        font-size: 23px;
+    }
+    section .heroSection .heroCopy .subHeader {
+        font-size: 12px;
+    }
+    section .heroSection .button {
+        width: 175px;
+    }
+}
+@media (min-width: 320px) and (max-width: 359px) {
+    section .heroSection .heroCopy {
+        width: 270px;
+    }
+    section .heroSection .heroCopy .header .chance,
+    section .heroSection .heroCopy .header .qualityLife {
+        font-size: 23px;
+    }
+    section .heroSection .heroCopy .subHeader {
+        font-size: 12px;
+    }
+    section .heroSection .button {
+        width: 175px;
+    }
+    footer .footer .location .fvct {
+        line-height: 20px;
+        width: auto;
+    }
+    section .whatWeDo .hgfg .headerText {
+        width: auto;
+    }
+    .gshcs2 {
+        height: auto;
+        width: 125px;
+    }
+}
+@media (min-width: 400px) {
+    .nav-bar nav .innavbar {
+        justify-content: space-around;
+    }
+}
+@media (min-width: 500px) {
+    section .meetTheTeam {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    section .meetTheTeam .mTT {
+        width: 811px;
+        height: 811px;
+    }
+    section .meetTheTeam .mTT .ellipse3 {
+        width: 320px;
+        height: 320px;
+    }
+}
+@media (min-width: 550px) {
+    section .heroSection {
+        background-size: 650px;
+    }
+}
+@media (min-width: 572px) {
+    section .welcomeToGoshenspring {
+        background-color: #F3FDF3;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+    section .welcomeToGoshenspring .left {
+        width: 100%;
+        margin-left: 20px;
+        justify-content: space-between;
+    }
+    section .welcomeToGoshenspring .left .headerText {
+        width: auto;
+        margin-left: 0;
+    }
+    section .welcomeToGoshenspring .left .copy,
+    section .welcomeToGoshenspring .left .tertiaryButton {
+        margin-top: 0;
+    }
+    section .welcomeToGoshenspring .left .copy  {
+        width: auto;
+        margin-left: 0;
+    }
+    .tertiaryButton {
+        margin-left: 0;
+        height: auto;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay {
+        height: 100%;
+        width: 100%;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .button {
+        margin-bottom: 40px;
+    }
+    section .oCR {
+        flex-direction: row;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    section .oCR .oC {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+
+    }
+    section .oCR .sAO {
+        border-radius: 20px;
+    }
+}
+@media (min-width: 584px) and (max-width: 642px) {
+    section .welcomeToGoshenspring .left .copy {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 600px) {
+    section .feedback {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    section .feedback .sFB {
+        height: 741px;
+    }
+    section .feedback .sFB .sAO {
+        width: 430px;
+        border-radius: 20px;
+    }
+}
+@media (min-width: 700px) {
+    section .heroSection {
+        background-size: 800px;
+    }
+    section .welcomeToGoshenspring .left .headerText {
+        width: 245px;
+    }
+}
+@media (min-width: 722px) {
+    section .heroSection .heroCopy .header {
+        width: 391px;
+    }
+    section .heroSection .heroCopy .header .chance,
+    section .heroSection .heroCopy .header .qualityLife {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    section .heroSection .heroCopy .subHeader {
+        font-size: 16px;
+        width: 391px;
+    }
+    section .welcomeToGoshenspring{
+        justify-content: space-between;
+        gap: 0;
+    }
+    section .welcomeToGoshenspring .left,
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay {
+        width: 309.9px;
+    }
+    section .oCR {
+        justify-content: space-between;
+        gap: 0;
+    }
+    section .oCR .oC,
+    section .oCR .sAO {
+        width: 309px;
+    }
+    section .whatWeDo .wwdt {
+        margin-left: 0;
+        text-align: center;
+    }
+    section .whatWeDo .wwdt .headerText,
+    section .whatWeDo .wwdt .copy {
+        width: 100%;
+    }
+
+}
+@media (min-width: 878px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .top {
+        width: 100%;
+        height: auto;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+    .top .logo2 {
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        align-self: center;
+    }
+    .top .logo2 .image1 {
+        width: 75px;
+        height: 75px;
+    }
+    .top .logo2 .gshcs {
+        height: auto;
+        width: 250px;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        word-wrap: break-word;
+    }
+    .top .cntct {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .top .cntct .lctn,
+    .top .cntct .phnm {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 50px;
+        gap: 10px;
+    }
+    .top .cntct .lctn .mrkpn,
+    .top .cntct .phnm .pnh {
+        display: flex;
+        width: 18px;
+        height: auto;
+    }
+    .top .cntct .lctn .mrkpn img,
+    .top .cntct .phnm .pnh img {
+        width: 100%;
+    }
+    .top .cntct .lctn .fldvwln, 
+    .top .cntct .phnm .cllnm {
+        color: #333333;
+        font-size: 18px;
+        font-family: Kadwa;
+        font-weight: 400;
+        word-wrap: break-word
+    }
+    .nav-bar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav-bar nav {
+        transform: translate(0, 0);
+        height: auto;
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+    .nav-bar nav .innavbar {
+        display: none;
+    }
+    .nav-bar nav .nav-list {
+        width: 100%;
+        height: 99px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        position: relative;
+    }
+    .nav-bar nav .nav-list li {
+        margin: auto 0;
+    }
+    .nav-bar nav .nav-list li:first-child {
+        background-color: #008000;
+        width: auto;
+        margin: auto 0;
+    }
+    .nav-bar nav .nav-list li a {
+        font-size: 20px;
+        font-family: Kadwa;
+        font-weight: 400;
+        word-wrap: break-word
+    }
+    .nav-bar nav .nav-list li:first-child a {
+        height: auto;
+        color: #FDDA0D;
+    }
+    .nav-bar .hamburgerMenu {
+        display: none;
+    }
+    .logo1 {
+        display: none;
+    }
+    footer .nav-bar {
+        display: block;
+    }
+    .body1, .body2, .body3, .body4, .body5, .body6, .body7 {
+        width: 100%;
+    }
+    section .heroSection {
+        height: 539px;
+        justify-content: center;
+        gap: 50px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    section .heroSection .heroCopy{
+        gap: 20px;
+        margin-left: 70px;
+        margin-top: 0;
+    }
+    section .heroSection .heroCopy .header {
+        width: 700px;
+    }
+    section .heroSection .heroCopy .subHeader {
+        width: 650px;
+    }
+    section .heroSection .heroCopy .header .chance,
+    section .heroSection .heroCopy .header .qualityLife {
+        height: 100%;
+        font-size: 50px;
+    }
+    section .heroSection .button {
+        width: 250px;
+        margin-left: 70px;
+    }
+    section .welcomeToGoshenspring {
+        gap: 50px;
+        padding: 15px 20px 50px 20px;
+    }
+    section .welcomeToGoshenspring .left,
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay {
+        width: 100%;
+    }
+    section .welcomeToGoshenspring .left .headerText {
+        width: 300px;
+        line-height: 35px;
+    }
+    section .welcomeToGoshenspring .left .headerText .welcome,
+    section .welcomeToGoshenspring .left .headerText .ghs {
+        font-size: 25px;
+    }
+    section .welcomeToGoshenspring .left .copy {
+        font-size: 15px;
+        width: 100%;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .ourQualityCareIsAResultOfProperAssessmentSetAnAppointmentWithUsToday {
+        width: 300px;
+        margin: 0 auto;
+    }
+    section .whatWeDo {
+        gap: 40px;
+    }
+    section .whatWeDo .wwdt {
+        gap: 30px;
+    }
+    section .whatWeDo .wwdt .headerText {
+        font-size: 35px;
+    }
+    section .whatWeDo .wwdt .copy {
+        font-size: 25px;
+    }
+    section .whatWeDo .hgfg {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        gap: 50px 120px;
+    }
+    section .whatWeDo .button {
+        margin-bottom: 40px;
+    }
+    section .oCR {
+        padding: 0 20px 60px 20px;
+        margin-bottom: 0;
+    }
+    section .oCR .oC .oCt .oCnt {
+        font-size: 25px;
+    }
+    section .oCR .oC .copy {
+        width: 350px;
+    }
+    section .oCR .oC,
+    section .oCR .sAO {
+        width: 100%;
+    }
+    section .oCR .sAO .copy {
+        width: 300px;
+        margin: 25px auto 0 auto;
+    }
+    section .feedback .sFB .sAO {
+        height: 350px;
+    }
+    section .feedback .sFB .sAO .bulbIcon {
+        background-size: 70px;
+        width: 70px;
+        height: 70px;
+    }
+    section .feedback .sFB .sAO .bulbIcon .ellipse4 {
+        width: 70px;
+        height: 70px;
+    }
+    section .feedback .sFB .sAO .headerText {
+        font-size: 25px;
+    }
+    footer .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+    }
+    footer .footer .location .fvct,
+    footer .footer .phoneNumber .number .num {
+        width: auto;
+    }
+    footer .footer .logo {
+        display: flex;
+    }
+    footer .footer .logo,
+    footer .footer .location,
+    footer .footer .phoneNumber {
+        width: auto;
+    }
+    footer .footer .location {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+    footer .footer .location .fvct {
+        line-height: 23px;
+    }
+    footer .footer .phoneNumber{
+        align-self: stretch;
+        justify-content: space-evenly;
+    }
+    footer .footer .phoneNumber .number {
+        justify-content: flex-start;
+    }
+    footer .footer .location .address {
+        height: auto;
+    }
+    footer .footer .location .locateUsAt,
+    footer .footer .phoneNumber .callUsOn {
+        width: 100%;
+    }
+    footer .footer .location .locateUsAt,
+    footer .footer .phoneNumber .callUsOn {
+        line-height: normal;
+    }
+}
+@media (min-width: 960px) {
+    .top {
+        margin: 20px;
+    }
+    section .welcomeToGoshenspring {
+        gap: 100px;
+    }
+    section .welcomeToGoshenspring .left {
+        justify-content: space-around;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon .icon4 {
+        width: 90px;
+        height: 90px;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .sch,
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .ass {
+        font-size: 25px;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .ourQualityCareIsAResultOfProperAssessmentSetAnAppointmentWithUsToday {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
+    section .oCR .sAO .headerText {
+        font-size: 25px;
+    }
+    section .oCR .sAO .mail .icon5 {
+        width: 90px;
+        height: 90px;
+    }
+}
+@media (min-width: 1018px) {
+    .top .logo2 {
+        height: auto;
+    }
+    .top .logo2 .gshcs {
+        width: 270px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    section .welcomeToGoshenspring {
+        gap: 200px;
+    }
+    section .oCR {
+        gap: 200px;
+    }
+    section .oCR .oC {
+        gap: 40px;
+    }
+    section .oCR .oC .copy {
+        width: 100%;
+    }
+    footer .footer {
+        height: auto;
+    }
+    footer .footer .logo .image1 {
+        width: 65px;
+    }
+    footer .footer .logo .gshs {
+        font-size: 24px;
+        line-height: 30px;
+        width: 200px;
+    }
+}
+@media (min-width: 1100px) {
+    .top {
+        justify-content: space-between;
+    }
+    .top .logo2 {
+        margin-left: 40px;
+    }
+    .top .cntct {
+        margin-right: 40px;
+    }
+    section .meetTheTeam .mTT .ellipse3 {
+        width: 400px;
+        height: 400px;
+    }
+    section .heroSection {
+        background-size: 1300px;
+        height: 796px;
+    }
+    section .heroSection .heroCopy {
+        height: 254px;
+        margin-left: 60px;
+    }
+    section .heroSection .heroCopy .header {
+        height: 160px;
+        width: 850px;
+    }
+    section .heroSection .heroCopy .header .chance {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    section .heroSection .heroCopy .header .qualityLife {
+        font-size: 60px;
+        color: #054B05;
+        line-height: 80px;
+    }
+    section .heroSection .heroCopy .subHeader {
+        width: 824px;
+        height: 70px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    section .heroSection .button {
+        margin-left: 60px;
+        width: 310px;
+        height: 75px;
+    }
+    section .heroSection .button .learnMore {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    section .feedback {
+        height: 600px;
+    }
+}
+@media (min-width: 1200px) {
+    footer .footer .logo .image1 {
+        width: 75px;
+    }
+    footer .footer .logo .gshs {
+        font-size: 28px;
+        line-height: 40px;
+        width: 250px;
+    }
+}
+@media (min-width: 1300px) {
+    .top .cntct .lctn .mrkpn,
+    .top .cntct .phnm .pnh {
+        width: 20px;
+    }
+    .top .cntct .lctn .fldvwln, 
+    .top .cntct .phnm .cllnm {
+        font-size: 20px;
+    }
+    section .heroSection {
+        background-size: 1600px;
+    }
+}
+@media (min-width: 1300px) {
+    .nav-bar .hamburgerMenu {
+        margin-right: 40px;
+    }
+}
