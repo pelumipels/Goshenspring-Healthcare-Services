@@ -1049,7 +1049,7 @@ footer .footer .phoneNumber .number .num {
 footer .nav-bar {
     display: none;
 }
-@media screen and (max-width: 877px) {
+@media (max-width: 877px) {
     section .heroSection1 {
         display: none;
     }
@@ -1058,7 +1058,7 @@ footer .nav-bar {
         justify-content: center;
     }
 }
-@media screen and (min-width: 250px) {
+@media (min-width: 250px) {
     section .heroSection .heroCopy {
         width: 270px;
     }
@@ -1073,7 +1073,7 @@ footer .nav-bar {
         width: 175px;
     }
 }
-@media screen and (min-width: 320px) and (max-width: 359px) {
+@media (min-width: 320px) and (max-width: 359px) {
     section .heroSection .heroCopy {
         width: 270px;
     }
@@ -1099,12 +1099,12 @@ footer .nav-bar {
         width: 125px;
     }
 }
-@media screen and (min-width: 400px) {
+@media (min-width: 400px) {
     .nav-bar nav .innavbar {
         justify-content: space-around;
     }
 }
-@media screen and (min-width: 500px) {
+@media (min-width: 500px) {
     section .meetTheTeam {
         background-position: center;
         background-size: cover;
@@ -1119,12 +1119,12 @@ footer .nav-bar {
         height: 320px;
     }
 }
-@media screen and (min-width: 550px) {
+@media (min-width: 550px) {
     section .heroSection {
         background-size: 650px;
     }
 }
-@media screen and (min-width: 572px) {
+@media (min-width: 572px) {
     section .welcomeToGoshenspring {
         background-color: #F3FDF3;
         flex-direction: row;
@@ -1177,13 +1177,13 @@ footer .nav-bar {
         border-radius: 20px;
     }
 }
-@media screen and (min-width: 584px) and (max-width: 642px) {
+@media (min-width: 584px) and (max-width: 642px) {
     section .welcomeToGoshenspring .left .copy {
         margin-top: 20px;
         margin-bottom: 20px;
     }
 }
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
     section .feedback {
         background-position: center;
         background-size: cover;
@@ -1197,7 +1197,7 @@ footer .nav-bar {
         border-radius: 20px;
     }
 }
-@media screen and (min-width: 700px) {
+@media (min-width: 700px) {
     section .heroSection {
         background-size: 800px;
     }
@@ -1205,7 +1205,7 @@ footer .nav-bar {
         width: 245px;
     }
 }
-@media screen and (min-width: 722px) {
+@media (min-width: 722px) {
     section .heroSection .heroCopy .header {
         width: 391px;
     }
@@ -1244,7 +1244,7 @@ footer .nav-bar {
     }
 
 }
-@media screen and (min-width: 878px) {
+@media (min-width: 878px) {
     header {
         flex-direction: column;
         width: 100%;
@@ -1517,7 +1517,7 @@ footer .nav-bar {
         line-height: normal;
     }
 }
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
     .top {
         margin: 20px;
     }
@@ -1549,7 +1549,7 @@ footer .nav-bar {
         height: 90px;
     }
 }
-@media screen and (min-width: 1018px) {
+@media (min-width: 1018px) {
     .top .logo2 {
         height: auto;
     }
@@ -1582,7 +1582,7 @@ footer .nav-bar {
         width: 200px;
     }
 }
-@media screen and (min-width: 1100px) {
+@media (min-width: 1100px) {
     .top {
         justify-content: space-between;
     }
@@ -1636,7 +1636,7 @@ footer .nav-bar {
         height: 600px;
     }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     footer .footer .logo .image1 {
         width: 75px;
     }
@@ -1646,7 +1646,7 @@ footer .nav-bar {
         width: 250px;
     }
 }
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
     .top .cntct .lctn .mrkpn,
     .top .cntct .phnm .pnh {
         width: 20px;
@@ -1659,7 +1659,7 @@ footer .nav-bar {
         background-size: 1600px;
     }
 }
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
     .nav-bar .hamburgerMenu {
         margin-right: 40px;
     }
