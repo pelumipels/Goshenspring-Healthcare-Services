@@ -518,7 +518,7 @@ section .whatWeDo .hgfg .skilledNursing {
     padding-top: 250px;
     background: linear-gradient(0deg, white 0%, white 100%);
     border-radius: 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-image: url(../images/59a19896503cf22bbee55f334e448fd6.jpeg);
     background-size: 324px;
     background-position: 0 -75px;
@@ -529,7 +529,7 @@ section .whatWeDo .hgfg .skilledNursing .frame15 {
     height: 50px;
     align-self: stretch;
     background: white;
-    /* overflow: hidden; */
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     display: inline-flex
@@ -547,7 +547,7 @@ section .whatWeDo .hgfg .homeHealthAid {
     padding-top: 250px;
     background: linear-gradient(0deg, white 0%, white 100%);
     border-radius: 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-image: url(../images/3173373a171eec78968ec7172990345c.jpeg);
     background-size: 450px;
     background-position: -65px 0;
@@ -558,7 +558,7 @@ section .whatWeDo .hgfg .homeHealthAid .frame15 {
     height: 50px;
     align-self: stretch;
     background: white;
-    /* overflow: hidden; */
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     display: inline-flex
@@ -576,7 +576,7 @@ section .whatWeDo .hgfg .physicalTherapy {
     padding-top: 250px;
     background: linear-gradient(0deg, white 0%, white 100%);
     border-radius: 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-image: url(../images/b2c9a965d29cab8c7c3ef3bdb4b4e971.jpeg);
     background-position: 0 -85px;
     background-size: 300px;
@@ -587,7 +587,7 @@ section .whatWeDo .hgfg .physicalTherapy .frame15 {
     height: 50px;
     align-self: stretch;
     background: white;
-    /* overflow: hidden; */
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     display: inline-flex
@@ -605,7 +605,7 @@ section .whatWeDo .hgfg .medicalSocialWork {
     padding-top: 250px;
     background: linear-gradient(0deg, white 0%, white 100%);
     border-radius: 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-image: url(../images/72441c232307b7f190082203c2a41789.jpeg);
     background-position: 0 -90px;
     background-size: 320px;
@@ -616,7 +616,7 @@ section .whatWeDo .hgfg .medicalSocialWork .frame15 {
     height: 50px;
     align-self: stretch;
     background: white;
-    /* overflow: hidden; */
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     display: inline-flex
