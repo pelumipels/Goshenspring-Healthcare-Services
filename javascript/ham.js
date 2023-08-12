@@ -14,7 +14,7 @@ menu.addEventListener('click', () => {
 
 
 function checkScreenWidth() {
-    if (window.innerWidth < 878) {
+    if (window.innerWidth < 878 || window.outerWidth < 878 || window.screen.availWidth || window.screen.width) {
 
         nav2.forEach((item) => {
             item.addEventListener('click', () => {
