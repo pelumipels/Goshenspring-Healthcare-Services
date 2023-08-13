@@ -7,26 +7,29 @@ const overlay = document.querySelector(".nav_overlay");
 menu.addEventListener('click', () => {
     overlay.classList.toggle("active");
     // overlay.style.pointerEvents = "auto";
+    overlay.style.overflow = "hidden";
     nav.classList.toggle('nav-toggle');
     menu.classList.toggle('close');
     document.body.style.overflow = "hidden"
 });
 
-
-function checkScreenWidth() {
-    if (window.innerWidth < 878 || window.outerWidth < 878 || window.screen.availWidth || window.screen.width) {
-
-        nav2.forEach((item) => {
-            item.addEventListener('click', () => {
-                overlay.classList.toggle("active");
-                nav.classList.toggle('nav-toggle');
-                menu.classList.toggle('close');
-                document.body.style.overflow = "auto";
-            });
-        });
-
-    }
-}
+nav2.forEach((item) => {
+    item.addEventListener('click', () => {
+        if (overlay.classList.contains("active")) {
+            overlay.classList.toggle("active");
+            overlay.style.overflow = "auto";
+        }
+        if (nav.classList.contains("nav-toggle")) {
+            nav.classList.toggle('nav-toggle');
+        }
+        if (menu.classList.contains("close")) {
+            menu.classList.toggle('close');
+        }
+        if (document.body.style.overflow === "hidden") {
+            document.body.style.overflow = "auto";
+        }
+    });
+});
 
 closeButton.addEventListener('click', () => {
     overlay.classList.toggle("active");
@@ -38,12 +41,9 @@ closeButton.addEventListener('click', () => {
 
 overlay.addEventListener("click", () => {
     overlay.classList.toggle("active");
+    overlay.style.overflow = "auto";
     // overlay.style.pointerEvents = "none";
     nav.classList.toggle('nav-toggle');
     menu.classList.toggle('close');
     document.body.style.overflow = "auto";
 });
-
-checkScreenWidth();
-
-window.addEventListener('resize', checkScreenWidth);
