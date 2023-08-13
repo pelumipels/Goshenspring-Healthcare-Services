@@ -6,6 +6,12 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3FDF3;
+    /* width: auto; */
 }
 html {
     font-family: 'Kadwa', serif;
@@ -20,12 +26,12 @@ li {
     list-style: none;
 }
 .goshenspringWeb {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F3FDF3;
-    width: auto;
+    width: auto; */
 }
 header {
     width: 90%;
