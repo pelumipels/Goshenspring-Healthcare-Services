@@ -1,6 +1,6 @@
 const menu = document.querySelector('header .hamburgerMenu');
-const nav = document.querySelector('header .nav-bar nav');
-const nav2 = document.querySelectorAll('header .nav-bar nav a');
+const nav = document.querySelector('header .nav-bar');
+const nav2 = document.querySelectorAll('header .nav-bar a');
 const closeButton = document.querySelector('.closeButton');
 const overlay = document.querySelector(".nav_overlay");
 
