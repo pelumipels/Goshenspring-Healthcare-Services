@@ -5,4 +5,3 @@ document.addEventListener("DOMContentLoaded", function () {
       history.back(); // Go back to the previous page
     });
   });
-  

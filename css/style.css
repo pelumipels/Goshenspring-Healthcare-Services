@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #F3FDF3;
+    overflow-x: hidden;
 }
 html {
     font-family: 'Kadwa', serif;
@@ -310,7 +311,9 @@ section .welcomeToGoshenspring {
     background: white
 }
 section .welcomeToGoshenspring .left {
-    margin-left: 20px;
+    max-width: 604px;
+    margin: 0 auto 0 auto;
+    padding-left: 20px;
     width: auto;
     height: auto;
     display: flex;
@@ -348,11 +351,12 @@ section .welcomeToGoshenspring .left .copy  {
     word-wrap: break-word
 }
 .tertiaryButton  {
-    width: 170px;
+    width: 159px;
     height: 100%;
     line-height: 100%;
     margin-top: 20px;
     display: flex;
+    align-items: center;
     cursor: pointer;
 }
 .tertiaryButton .readMore  {
@@ -365,42 +369,48 @@ section .welcomeToGoshenspring .left .copy  {
     word-wrap: break-word;
 }
 .tertiaryButton .frame6 {
+    display: flex;
+    align-items: center;
     position: relative;
-    right: 6px;
+    right: 3px;
 }
 .tertiaryButton .frame6 .icon1,
 .tertiaryButton .frame6 .icon2,
 .tertiaryButton .frame6 .icon3 {
     width: 22px;
-    height: 18px;
+    height: 20px;
 }
 .tertiaryButton .frame6 .icon2 {
     position: relative;
-    right: 20px;
+    right: 15px;
 }
 .tertiaryButton .frame6 .icon3 {
     position: relative;
-    right: 40px;
+    right: 30px;
 }
 section .welcomeToGoshenspring .scheduleAssessmentOverlay  {
+    max-width: 610px;
     width: 100%;
+    text-align: center;
     height: auto;
-    margin-top: 60px;
+    margin: 60px auto 0 auto;
     background: rgba(255, 255, 255, 0.70);
     box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.07)
 }
 section .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon  {
-    width: auto;
+    max-width: 115px;
     height: auto;
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin: 37px auto 0 auto;
 }
 section .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon .icon4  {
     width: 50px;
-    height: 50px;
 }
 section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment  {
-    margin-top: 10px;
+    max-width: 372px;
+    margin: 10px auto 0 auto;
     text-align: center;
 }
 section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .sch  {
@@ -417,8 +427,9 @@ section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .
     font-weight: 700;
     word-wrap: break-word
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .ourQualityCareIsAResultOfProperAssessmentSetAnAppointmentWithUsToday  {
-    margin-top: 15px;
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .oQTText  {
+    max-width: 514px;
+    margin: 15px auto 0 auto;
     text-align: center;
     color: black;
     font-size: 16px;
@@ -427,18 +438,19 @@ section .welcomeToGoshenspring .scheduleAssessmentOverlay .ourQualityCareIsAResu
     line-height: 20px;
     word-wrap: break-word
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .button  {
-    width: 100%;
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .button {
+    text-align: center;
     margin: 30px auto 50px auto;
     display: inline-flex
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore  {
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore {
     color: black;
     width: 227px;
+    height: 50px;
+    max-width: 310px;
     border-radius: 10px;
     background: #FDDA0D;
     margin: 0 auto;
-    height: 50px;
     cursor: pointer;
     font-size: 16px;
     justify-content: center;
@@ -707,21 +719,20 @@ section .oCR {
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background: #F3FDF3
 }
 section .oCR .oC {
-    width: 100%;
+    max-width: 536px;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
 }
 section .oCR .oC .oCt {
-    padding-bottom: 8px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    display: inline-flex
+    height: auto;
+    width: 190px;
 }
 section .oCR .oC .oCt .oCnt {
     color: black;
@@ -740,43 +751,38 @@ section .oCR .oC .oCt .mS {
     word-wrap: break-word
 }
 section .oCR .oC .copy {
-    padding-bottom: 2px;
-    position: relative;
-    justify-content: flex-start;
-    align-items: center;
-    display: inline-flex
-}
-section .oCR .oC .copy .wET{
-    width: auto;
+    margin-top: 20px;
+    width: 100%;
     color: black;
     font-size: 16px;
     font-family: Kadwa;
     font-weight: 400;
     line-height: 25px;
-    word-wrap: break-word
-}
-section .oCR .oC .b5{
-    margin-left: 0;
+    word-wrap: break-word;
 }
 section .oCR .sAO {
+    max-width: 648px;
     width: 100%;
+    text-align: center;
     height: auto;
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
     background: rgba(255, 255, 255, 0.70);
     box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.07)
 }
 section .oCR .sAO .mail {
-    width: auto;
+    max-width: 150px;
     height: auto;
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin: 37px auto 0 auto ;
 }
 section .oCR .sAO .mail .icon5 {
     width: 50px;
-    height: 50px;
 }
 section .oCR .sAO .headerText {
-    margin-top: 10px;
+    max-width: 254px;
+    margin: 10px auto 0 auto;
     text-align: center;
     color: black;
     font-size: 20px;
@@ -785,7 +791,8 @@ section .oCR .sAO .headerText {
     word-wrap: break-word
 }
 section .oCR .sAO .copy {
-    margin: 25px auto;
+    max-width: 519px;
+    margin: 15px auto 0 auto;
     text-align: center;
     color: black;
     font-size: 16px;
@@ -795,27 +802,27 @@ section .oCR .sAO .copy {
     word-wrap: break-word
 }
 section .oCR .sAO .button {
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    text-align: center;
+    margin: 30px auto 50px auto;
     display: inline-flex
 }
 section .oCR .sAO .button .learnMore{
     color: black;
     width: 227px;
-    font-size: 16px;
-    background: #FDDA0D;
     height: 50px;
-    cursor: pointer;
+    max-width: 310px;
     border-radius: 10px;
-    font-family: Kadwa;
-    display: inline-flex;
+    background: #FDDA0D;
     margin: 0 auto;
-    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
     justify-content: center;
+    align-items: center;
+    font-family: Kadwa;
     font-weight: 400;
     line-height: 25px;
-    word-wrap: break-word
+    display: inline-flex;
+    word-wrap: break-word;
 }
 .body6 {
     width: 90%;
@@ -1025,6 +1032,20 @@ footer .nav-bar {
     }
 }
 @media screen and (min-width: 500px) {
+    section .welcomeToGoshenspring {
+        background-color: #F3FDF3;
+    }
+    section .welcomeToGoshenspring .left {
+        padding-left: 0;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay  {
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    section .oCR .sAO {
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
     section .meetTheTeam {
         background-position: center;
         background-size: cover;
@@ -1042,65 +1063,6 @@ footer .nav-bar {
 @media screen and (min-width: 550px) {
     section .heroSection {
         background-size: 650px;
-    }
-}
-@media screen and (min-width: 572px) {
-    section .welcomeToGoshenspring {
-        background-color: #F3FDF3;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 10px;
-        padding-bottom: 30px;
-    }
-    section .welcomeToGoshenspring .left {
-        width: 100%;
-        margin-left: 20px;
-        justify-content: space-between;
-    }
-    section .welcomeToGoshenspring .left .headerText {
-        width: auto;
-        margin-left: 0;
-    }
-    section .welcomeToGoshenspring .left .copy,
-    section .welcomeToGoshenspring .left .tertiaryButton {
-        margin-top: 0;
-    }
-    section .welcomeToGoshenspring .left .copy  {
-        width: auto;
-        margin-left: 0;
-    }
-    .tertiaryButton {
-        margin-left: 0;
-        height: auto;
-    }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay {
-        height: 100%;
-        width: 100%;
-        margin-top: 50px;
-        border-radius: 20px;
-    }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .button {
-        margin-bottom: 40px;
-    }
-    section .oCR {
-        flex-direction: row;
-        gap: 30px;
-        margin-bottom: 30px;
-    }
-    section .oCR .oC {
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-
-    }
-    section .oCR .sAO {
-        border-radius: 20px;
-    }
-}
-@media screen and (min-width: 584px) and (max-width: 642px) {
-    section .welcomeToGoshenspring .left .copy {
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
 }
 @media screen and (min-width: 600px) {
@@ -1137,22 +1099,6 @@ footer .nav-bar {
     section .heroSection .heroCopy .subHeader {
         font-size: 16px;
         width: 391px;
-    }
-    section .welcomeToGoshenspring{
-        justify-content: space-between;
-        gap: 0;
-    }
-    section .welcomeToGoshenspring .left,
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay {
-        width: 309.9px;
-    }
-    section .oCR {
-        justify-content: space-between;
-        gap: 0;
-    }
-    section .oCR .oC,
-    section .oCR .sAO {
-        width: 309px;
     }
     section .whatWeDo .wwdt {
         margin-left: 0;
@@ -1316,29 +1262,55 @@ footer .nav-bar {
         width: 250px;
         margin-left: 70px;
     }
-    section .welcomeToGoshenspring {
-        gap: 50px;
-        padding: 15px 20px 50px 20px;
-    }
-    section .welcomeToGoshenspring .left,
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay {
-        width: 100%;
-    }
     section .welcomeToGoshenspring .left .headerText {
-        width: 300px;
-        line-height: 35px;
+        width: 492px;
+        line-height: 50px;
     }
     section .welcomeToGoshenspring .left .headerText .welcome,
     section .welcomeToGoshenspring .left .headerText .ghs {
-        font-size: 25px;
+        font-size: 35px;
     }
     section .welcomeToGoshenspring .left .copy {
-        font-size: 15px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 35px;
         width: 100%;
     }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .ourQualityCareIsAResultOfProperAssessmentSetAnAppointmentWithUsToday {
+    .tertiaryButton {
+        width: 220px;
+    }
+    .tertiaryButton .readMore {
+        font-size: 25px;
+    }
+    .tertiaryButton .frame6 .icon1,
+    .tertiaryButton .frame6 .icon2,
+    .tertiaryButton .frame6 .icon3 {
+        width: 25px;
+        height: 28px;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .oQTText {
         width: 300px;
         margin: 0 auto;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon .icon4  {
+        width: 100%;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .sch,
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .ass {
+        font-size: 30px;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .oQTText {
+        width: 100%;
+        font-size: 25px;
+        line-height: 45px;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .button {
+        width: 100%;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore {
+        width: 100%;
+        height: 75px;
+        font-size: 20px;
     }
     section .whatWeDo {
         gap: 40px;
@@ -1360,23 +1332,46 @@ footer .nav-bar {
     section .whatWeDo .button {
         margin-bottom: 40px;
     }
-    section .oCR {
-        padding: 0 20px 60px 20px;
-        margin-bottom: 0;
+    section .oCR .oC {
+        height: 407px;
+        justify-content: center;
+    }
+    section .oCR .oC .oCt {
+        width: 333px;
     }
     section .oCR .oC .oCt .oCnt {
+        font-size: 35px;
+    }
+    section .oCR .oC .oCt .mS {
         font-size: 25px;
+        line-height: 50px;
     }
     section .oCR .oC .copy {
-        width: 350px;
+        font-size: 20px;
+        line-height: 40px;
     }
-    section .oCR .oC,
-    section .oCR .sAO {
+    section .oCR .oC .tertiaryButton {
+        height: auto;
+        margin-top: 40px;
+    }
+    section .oCR .sAO .mail .icon5 {
         width: 100%;
     }
+    section .oCR .sAO .headerText {
+        font-size: 30px;
+    }
     section .oCR .sAO .copy {
-        width: 300px;
-        margin: 25px auto 0 auto;
+        width: 100%;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    section .oCR .sAO .button {
+        width: 100%;
+    }
+    section .oCR .sAO .button .learnMore{
+        width: 100%;
+        height: 75px;
+        font-size: 20px;
     }
     section .feedback .sFB .sAO {
         height: 350px;
@@ -1425,35 +1420,6 @@ footer .nav-bar {
         display: block;
     }
 }
-@media screen and (min-width: 960px) {
-    section .welcomeToGoshenspring {
-        gap: 100px;
-    }
-    section .welcomeToGoshenspring .left {
-        justify-content: space-around;
-    }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon .icon4 {
-        width: 90px;
-        height: 90px;
-    }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .sch,
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .ass {
-        font-size: 25px;
-    }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .ourQualityCareIsAResultOfProperAssessmentSetAnAppointmentWithUsToday {
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 16px;
-    }
-    section .oCR .sAO .headerText {
-        font-size: 25px;
-    }
-    section .oCR .sAO .mail .icon5 {
-        width: 90px;
-        height: 90px;
-    }
-}
 @media screen and (min-width: 1018px) {
     .logo2 .gshcs {
         width: 270px;
@@ -1468,18 +1434,6 @@ footer .nav-bar {
     header .cntct .lctn .fldvwln,
     header .cntct .phnm .cllnm {
         font-size: 25px;
-    }
-    section .welcomeToGoshenspring {
-        gap: 200px;
-    }
-    section .oCR {
-        gap: 200px;
-    }
-    section .oCR .oC {
-        gap: 40px;
-    }
-    section .oCR .oC .copy {
-        width: 100%;
     }
     footer .location,
     footer .phoneNumber {
@@ -1548,6 +1502,35 @@ footer .nav-bar {
     }
     section .feedback {
         height: 600px;
+    }
+}
+@media screen and (min-width: 1230px) {
+    section .welcomeToGoshenspring {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 0;
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+    section .welcomeToGoshenspring .left {
+        justify-content: space-between;
+    }
+    section .welcomeToGoshenspring .scheduleAssessmentOverlay {
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    section .oCR {
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 0;
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+    section .oCR .oC {
+        margin-top: 150px;
+    }
+    section .oCR .oC .tertiaryButton {
+        margin-top: 80px;
     }
 }
 @media screen and (min-width: 1300px) {

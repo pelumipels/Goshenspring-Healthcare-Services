@@ -41,6 +41,6 @@ formSubmit.addEventListener('click', e => {
 					formSubmit.classList.remove('isLoading');
 					// console.error('Error!', error.message)
 				})
-			})
+		})
 	}
 })

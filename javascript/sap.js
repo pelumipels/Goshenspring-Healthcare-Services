@@ -20,10 +20,10 @@ form.addEventListener('submit', e => {
         submitButton.classList.remove('isLoading');
         // console.log('Data sent successfully:', data)
     })
-      .catch(error => {
+    .catch(error => {
         alert('Error:', error);
         submitButton.disabled = false;
         submitButton.classList.remove('isLoading');
         // console.error('Error!', error.message)
-      })
-  })
+    })
+})

@@ -1,20 +1,19 @@
 const menu = document.querySelector('header .hamburgerMenu');
 const nav = document.querySelector('header .nav-bar');
-const nav2 = document.querySelectorAll('header .nav-bar a');
+const nav_links = document.querySelectorAll('header .nav-bar .nav-list a');
 const closeButton = document.querySelector('.closeButton');
 const overlay = document.querySelector(".nav_overlay");
 
 menu.addEventListener('click', () => {
     overlay.classList.toggle("active");
-    // overlay.style.pointerEvents = "auto";
     overlay.style.overflow = "hidden";
     nav.classList.toggle('nav-toggle');
     menu.classList.toggle('close');
     document.body.style.overflow = "hidden"
 });
 
-nav2.forEach((item) => {
-    item.addEventListener('click', () => {
+nav_links.forEach((nav_link) => {
+    nav_link.addEventListener('click', () => {
         if (overlay.classList.contains("active")) {
             overlay.classList.toggle("active");
             overlay.style.overflow = "auto";
@@ -33,7 +32,6 @@ nav2.forEach((item) => {
 
 closeButton.addEventListener('click', () => {
     overlay.classList.toggle("active");
-    // overlay.style.pointerEvents = "none";
     nav.classList.toggle('nav-toggle');
     menu.classList.toggle('close');
     document.body.style.overflow = "auto";
@@ -42,7 +40,6 @@ closeButton.addEventListener('click', () => {
 overlay.addEventListener("click", () => {
     overlay.classList.toggle("active");
     overlay.style.overflow = "auto";
-    // overlay.style.pointerEvents = "none";
     nav.classList.toggle('nav-toggle');
     menu.classList.toggle('close');
     document.body.style.overflow = "auto";
