@@ -506,28 +506,31 @@ section .whatWeDo .wwdt .copy {
     word-wrap: break-word
 }
 section .whatWeDo .hgfg {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
-section .whatWeDo .hgfg .skilledNursing,
-section .whatWeDo .hgfg .homeHealthAid,
-section .whatWeDo .hgfg .physicalTherapy,
-section .whatWeDo .hgfg .medicalSocialWork {
-    width: 300px;
-}
-section .whatWeDo .hgfg .skilledNursing {
-    height: auto;
-    padding-top: 250px;
+.skilledNursing,
+.homeHealthAid,
+.physicalTherapy,
+.medicalSocialWork {
+    width: 90%;
+    height: 300px;
     background: linear-gradient(0deg, white 0%, white 100%);
     border-radius: 10px;
     overflow: hidden;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.skilledNursing {
     background-image: url(../images/59a19896503cf22bbee55f334e448fd6.jpeg);
-    background-size: 324px;
-    background-position: 0 -75px;
-    display: inline-flex
+    background-position: 0 -55px;
 }
-section .whatWeDo .hgfg .skilledNursing .frame15 {
+.frame15 {
     width: 100%;
     height: 50px;
     align-self: stretch;
@@ -535,9 +538,12 @@ section .whatWeDo .hgfg .skilledNursing .frame15 {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    display: inline-flex
+    display: flex;
 }
-section .whatWeDo .hgfg .skilledNursing .frame15 .sn {
+.sN,
+.hHA,
+.pT,
+.mSW {
     color: black;
     font-size: 16px;
     font-family: Kadwa;
@@ -545,92 +551,17 @@ section .whatWeDo .hgfg .skilledNursing .frame15 .sn {
     line-height: 20px;
     word-wrap: break-word
 }
-section .whatWeDo .hgfg .homeHealthAid {
-    height: auto;
-    padding-top: 250px;
-    background: linear-gradient(0deg, white 0%, white 100%);
-    border-radius: 10px;
-    overflow: hidden;
+.homeHealthAid {
     background-image: url(../images/3173373a171eec78968ec7172990345c.jpeg);
-    background-size: 450px;
     background-position: -65px 0;
-    display: inline-flex
 }
-section .whatWeDo .hgfg .homeHealthAid .frame15 {
-    width: 100%;
-    height: 50px;
-    align-self: stretch;
-    background: white;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex
-}
-section .whatWeDo .hgfg .homeHealthAid .frame15 .hHA {
-    color: black;
-    font-size: 16px;
-    font-family: Kadwa;
-    font-weight: 400;
-    line-height: 20px;
-    word-wrap: break-word
-}
-section .whatWeDo .hgfg .physicalTherapy {
-    height: auto;
-    padding-top: 250px;
-    background: linear-gradient(0deg, white 0%, white 100%);
-    border-radius: 10px;
-    overflow: hidden;
+.physicalTherapy {
     background-image: url(../images/b2c9a965d29cab8c7c3ef3bdb4b4e971.jpeg);
     background-position: 0 -85px;
-    background-size: 300px;
-    display: inline-flex
 }
-section .whatWeDo .hgfg .physicalTherapy .frame15 {
-    width: 100%;
-    height: 50px;
-    align-self: stretch;
-    background: white;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex
-}
-section .whatWeDo .hgfg .physicalTherapy .frame15 .pT {
-    color: black;
-    font-size: 16px;
-    font-family: Kadwa;
-    font-weight: 400;
-    line-height: 20px;
-    word-wrap: break-word
-}
-section .whatWeDo .hgfg .medicalSocialWork {
-    height: auto;
-    padding-top: 250px;
-    background: linear-gradient(0deg, white 0%, white 100%);
-    border-radius: 10px;
-    overflow: hidden;
+.medicalSocialWork {
     background-image: url(../images/72441c232307b7f190082203c2a41789.jpeg);
-    background-position: 0 -90px;
-    background-size: 320px;
-    display: inline-flex
-}
-section .whatWeDo .hgfg .medicalSocialWork .frame15 {
-    width: 100%;
-    height: 50px;
-    align-self: stretch;
-    background: white;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex
-}
-section .whatWeDo .hgfg .medicalSocialWork .frame15 .medicalSocialWork {
-    color: black;
-    font-size: 16px;
-    font-family: Kadwa;
-    font-weight: 400;
-    line-height: 20px;
-    word-wrap: break-word
+    background-position: 0 -72px;
 }
 section .whatWeDo .button {
     width: 202px;
@@ -640,8 +571,7 @@ section .whatWeDo .button {
     border: 0.50px #FDDA0D solid;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    display: inline-flex;
+    display: flex;
     cursor: pointer;
 }
 section .whatWeDo .button .learnMore {
@@ -835,77 +765,84 @@ section .line7 {
 section .feedback {
     width: 100%;
     background-image: url(../images/e008509d51bf9c1daa62eefc7bd6c33c.jpeg);
-    background-position: -160px -10px;
-    background-size: 700px;
+    height: 450px;
+    background-size: cover;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    display: inline-flex
+    align-items: center;
+    display: flex
+}
+.fb_overlay {
+    position: absolute;
+    height: 450px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
 }
 section .feedback .sFB {
     width: 100%;
-    flex: 1 1 0;
-    padding-top: 53px;
-    padding-bottom: 53px;
     background: rgba(0, 0, 0, 0.40);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: inline-flex
 }
-section .feedback .sFB .sAO {
-    width: 100%;
-    height: auto;
-    padding: 40px 0 40px 0;
+section .feedback .sAO {
+    width: 90%;
+    max-width: 650px;
+    height: 360px;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 15px;
     background: white;
     box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.07);
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 5px;
-    display: flex
 }
-section .feedback .sFB .sAO .bulbIcon {
-    width: 50px;
+section .feedback .sAO .bulbIcon {
     height: 50px;
-    margin: 0 auto 0 auto;
-    background-image: url(../images/bulb.png);
+    margin-top: 30px;
+    max-width: 100px;
+    background-image: url(../images/bulb.svg);
     background-size: 50px;
 }
-section .feedback .sFB .sAO .bulbIcon .ellipse4 {
+section .feedback .sAO .bulbIcon .ellipse4 {
     width: 50px;
-    height: 50px;
+    max-width: 150px;
     border-radius: 9999px;
     border: 1.50px #008000 solid
 }
-section .feedback .sFB .sAO .headerText {
+section .feedback .sAO .headerText {
     color: black;
+    max-width: 328px;
     font-size: 20px;
+    text-align: center;
     font-family: Kadwa;
     margin: 0 auto 0 auto;
     font-weight: 700;
     word-wrap: break-word
 }
-section .feedback .sFB .sAO .copy {
-    width: 289px;
+section .feedback .sAO .copy {
+    max-width: 467px;
     text-align: center;
     color: black;
     font-size: 16px;
     font-family: Kadwa;
-    margin: 0 auto 0 auto;
     font-weight: 400;
     line-height: 20px;
     word-wrap: break-word
 }
-section .feedback .sFB .sAO .button {
-    width: 100%;
-    margin: 0 auto 0 auto;
-    display: inline-flex
+section .feedback .sAO .button {
+    margin-top: 50px;
 }
-section .feedback .sFB .sAO .button .learnMore {
+section .feedback .sAO .button .learnMore {
     color: black;
     font-size: 16px;
     font-family: Kadwa;
     width: 247px;
+    max-width: 310px;
     border-radius: 10px;
     margin: 0 auto;
     cursor: pointer;
@@ -915,7 +852,7 @@ section .feedback .sFB .sAO .button .learnMore {
     height: 50px;
     background: #FDDA0D;
     line-height: 25px;
-    display: inline-flex;
+    display: flex;
     word-wrap: break-word
 }
 .body7 {
@@ -1031,6 +968,15 @@ footer .nav-bar {
         width: 125px;
     }
 }
+@media screen and (min-width: 474px) {
+    .skilledNursing,
+    .homeHealthAid,
+    .physicalTherapy,
+    .medicalSocialWork {
+        max-width: 429px;
+        height: 456px;
+    }
+}
 @media screen and (min-width: 500px) {
     section .welcomeToGoshenspring {
         background-color: #F3FDF3;
@@ -1065,20 +1011,6 @@ footer .nav-bar {
         background-size: 650px;
     }
 }
-@media screen and (min-width: 600px) {
-    section .feedback {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    section .feedback .sFB {
-        height: 741px;
-    }
-    section .feedback .sFB .sAO {
-        width: 430px;
-        border-radius: 20px;
-    }
-}
 @media screen and (min-width: 700px) {
     section .heroSection {
         background-size: 800px;
@@ -1108,7 +1040,9 @@ footer .nav-bar {
     section .whatWeDo .wwdt .copy {
         width: 100%;
     }
-
+    section .feedback .sAO {
+        border-radius: 20px;
+    }
 }
 @media screen and (min-width: 878px) {
     header {
@@ -1324,13 +1258,14 @@ footer .nav-bar {
     section .whatWeDo .wwdt .copy {
         font-size: 25px;
     }
-    section .whatWeDo .hgfg {
-        display: grid;
-        grid-template: 1fr 1fr / 1fr 1fr;
-        gap: 50px 120px;
-    }
     section .whatWeDo .button {
+        width: 310px;
+        height: 75px;
+        margin-top: 20px;
         margin-bottom: 40px;
+    }
+    section .whatWeDo .button .learnMore {
+        font-size: 20px;
     }
     section .oCR .oC {
         height: 407px;
@@ -1373,20 +1308,44 @@ footer .nav-bar {
         height: 75px;
         font-size: 20px;
     }
-    section .feedback .sFB .sAO {
-        height: 350px;
+    section .feedback {
+        height: 741px;
     }
-    section .feedback .sFB .sAO .bulbIcon {
-        background-size: 70px;
-        width: 70px;
-        height: 70px;
+    .fb_overlay {
+        width: 100%;
+        height: 741px;
     }
-    section .feedback .sFB .sAO .bulbIcon .ellipse4 {
-        width: 70px;
-        height: 70px;
+    section .feedback .sAO {
+        height: 592.8px;
     }
-    section .feedback .sFB .sAO .headerText {
+    section .feedback .sAO .bulbIcon {
+        height: 100px;
+        margin-top: 60px;
+        width: 100px;
+        background-size: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section .feedback .sAO .bulbIcon .ellipse4 {
+        width: 150px;
+    }
+    section .feedback .sAO .headerText {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    section .feedback .sAO .copy {
         font-size: 25px;
+        line-height: 50px;
+    }
+    section .feedback .sAO .button {
+        margin-top: 20px;
+        width: 100%;
+    }
+    section .feedback .sAO .button .learnMore {
+        width: 100%;
+        height: 75px;
+        font-size: 20px;
     }
     footer {
         padding-top: 50px;
@@ -1500,9 +1459,6 @@ footer .nav-bar {
         font-size: 20px;
         line-height: 35px;
     }
-    section .feedback {
-        height: 600px;
-    }
 }
 @media screen and (min-width: 1230px) {
     section .welcomeToGoshenspring {
@@ -1519,6 +1475,12 @@ footer .nav-bar {
         margin-bottom: 0;
         margin-top: 30px;
     }
+    section .whatWeDo .hgfg {
+        justify-items: center;
+        display: grid;
+         grid-template: 1fr 1fr / 1fr 1fr; 
+        gap: 70px 120px;
+    }
     section .oCR {
         flex-direction: row;
         justify-content: center;
@@ -1531,6 +1493,9 @@ footer .nav-bar {
     }
     section .oCR .oC .tertiaryButton {
         margin-top: 80px;
+    }
+    section .feedback {
+        background-position: 0 -100px;
     }
 }
 @media screen and (min-width: 1300px) {
