@@ -1,6 +1,6 @@
 const scriptURL = "https://script.google.com/macros/s/AKfycbzrDQ6khdQxDaa-CK36SjtSU8Abyf9BpcA8yIOw1vQWXo1m_IcCR5fj4ZjkZHBannZBmA/exec";
-const formSubmit = document.querySelector(".form-submit");
 const forms = document.querySelectorAll('form[name="goshenspring-healthcare-services"]');
+const formSubmit = document.querySelector(".form-submit");
 
 formSubmit.addEventListener('click', e => {
     e.preventDefault();
