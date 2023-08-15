@@ -592,31 +592,23 @@ section .line5 {
 }
 section .meetTheTeam {
     width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(0deg,  0%,  100%);
     background-image: url(../images/df87d90b710a9d400f3297c2d6d60f9f.jpeg);
-    background-size: 450px;
-    background-position: 50% 50%;
-}
-section .meetTheTeam .mTT {
-    width: 400px;
-    height: 400px;
-    display: flex;
-    align-items: center;
+    height: 450px;
+    background-size: cover;
     justify-content: center;
-    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    background-position: center;
 }
-section .meetTheTeam .mTT .ellipse3 {
-    width: 170px;
-    height: 170px;
+section .meetTheTeam .ellipse3 {
+    width: 250px;
+    height: 250px;
     margin: auto auto;
     position: relative;
     background: black;
     border-radius: 9999px
 }
-section .meetTheTeam .mTT .primaryButton {
+section .meetTheTeam .primaryButton {
     width: 202px;
     height: 50px;
     position: absolute;
@@ -778,14 +770,6 @@ section .feedback {
     width: 90%;
     background-color: rgba(0, 0, 0, 0.4);
     display: block;
-}
-section .feedback .sFB {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.40);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex
 }
 section .feedback .sAO {
     width: 90%;
@@ -1367,19 +1351,6 @@ form .ianar .check-ianar label {
         border-radius: 20px;
         margin-bottom: 20px;
     }
-    section .meetTheTeam {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    section .meetTheTeam .mTT {
-        width: 811px;
-        height: 811px;
-    }
-    section .meetTheTeam .mTT .ellipse3 {
-        width: 320px;
-        height: 320px;
-    }
 }
 @media (min-width: 510px) {
     form .part5 .eachDiv .op1 {
@@ -1638,6 +1609,15 @@ form .ianar .check-ianar label {
     section .whatWeDo .wwdt .copy {
         font-size: 25px;
     }
+    .frame15 {
+        height: 71px;
+    }
+    .sN,
+    .hHA,
+    .pT,
+    .mSW {
+        font-size: 20px;
+    }
     section .whatWeDo .button {
         width: 310px;
         height: 75px;
@@ -1646,6 +1626,20 @@ form .ianar .check-ianar label {
     }
     section .whatWeDo .button .learnMore {
         font-size: 20px;
+    }
+    section .meetTheTeam {
+        height: 811px;
+    }
+    section .meetTheTeam .ellipse3 {
+        width: 560px;
+        height: 560px;
+    }
+    section .meetTheTeam .primaryButton {
+        width: 310px;
+        height: 75px;
+    }
+    section .meetTheTeam .primaryButton .learnMore {
+        font-size: 25px;
     }
     section .oCR .oC {
         height: 407px;
@@ -1908,10 +1902,6 @@ form .ianar .check-ianar label {
     }
     .cntct {
         margin-right: 40px;
-    }
-    section .meetTheTeam .mTT .ellipse3 {
-        width: 400px;
-        height: 400px;
     }
     section .heroSection {
         background-size: 1300px;
