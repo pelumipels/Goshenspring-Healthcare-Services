@@ -224,7 +224,7 @@ section .heroSection {
     width: 100%;
     height: 280px;
     padding: 56px 0 45px 0;
-    background: linear-gradient(0deg, rgba(211, 211, 211, 0.3) 0%, rgba(211, 211, 211, 0.3) 100%), url(../images/def585db45666696f3864f5cfc73bc0b.jpeg), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(211, 211, 211, 0.40) 100%, rgba(0, 0, 0, 0.90) 100%), url(../images/def585db45666696f3864f5cfc73bc0b.jpeg), lightgray 50% / cover no-repeat;
     background-size: cover;
     background-color: transparent;
     background-position: center;
@@ -245,7 +245,7 @@ section .heroSection .heroCopy {
     display: inline-flex
 }
 section .heroSection .heroCopy .header {
-    width: 280px;
+    max-width: 500px;
 }
 section .heroSection .heroCopy .header .chance {
     color: black;
@@ -264,7 +264,8 @@ section .heroSection .heroCopy .header .qualityLife {
     word-wrap: break-word;
 }
 section .heroSection .heroCopy .subHeader {
-    width: 243px;
+    max-width: 500px;
+    /* width: 243px; */
     color: black;
     font-size: 14px;
     font-family: Kadwa;
@@ -602,8 +603,6 @@ section .meetTheTeam {
 section .meetTheTeam .ellipse3 {
     width: 250px;
     height: 250px;
-    margin: auto auto;
-    position: relative;
     background: black;
     border-radius: 9999px
 }
@@ -1285,35 +1284,7 @@ form .ianar .check-ianar label {
         justify-content: center;
     }
 }
-@media screen and (min-width: 250px) {
-    section .heroSection .heroCopy {
-        width: 270px;
-    }
-    section .heroSection .heroCopy .header .chance,
-    section .heroSection .heroCopy .header .qualityLife {
-        font-size: 23px;
-    }
-    section .heroSection .heroCopy .subHeader {
-        font-size: 12px;
-    }
-    section .heroSection .button {
-        width: 175px;
-    }
-}
 @media screen and (min-width: 320px) and (max-width: 359px) {
-    section .heroSection .heroCopy {
-        width: 270px;
-    }
-    section .heroSection .heroCopy .header .chance,
-    section .heroSection .heroCopy .header .qualityLife {
-        font-size: 23px;
-    }
-    section .heroSection .heroCopy .subHeader {
-        font-size: 12px;
-    }
-    section .heroSection .button {
-        width: 175px;
-    }
     footer .location .fvct {
         line-height: 20px;
         width: auto;
@@ -1370,18 +1341,6 @@ form .ianar .check-ianar label {
     }
 }
 @media screen and (min-width: 722px) {
-    section .heroSection .heroCopy .header {
-        width: 391px;
-    }
-    section .heroSection .heroCopy .header .chance,
-    section .heroSection .heroCopy .header .qualityLife {
-        font-size: 35px;
-        line-height: 50px;
-    }
-    section .heroSection .heroCopy .subHeader {
-        font-size: 16px;
-        width: 391px;
-    }
     section .whatWeDo .wwdt {
         margin-left: 0;
         text-align: center;
@@ -1519,8 +1478,8 @@ form .ianar .check-ianar label {
         width: 100%;
     }
     section .heroSection {
-        height: 539px;
-        justify-content: center;
+        height: 796px;
+        justify-content: space-around;
         gap: 50px;
         background-position: center;
         background-size: cover;
@@ -1532,19 +1491,27 @@ form .ianar .check-ianar label {
         margin-top: 0;
     }
     section .heroSection .heroCopy .header {
-        width: 700px;
+        max-width: 850px;
     }
     section .heroSection .heroCopy .subHeader {
-        width: 650px;
+        font-size: 25px;
+        line-height: 35px;
+        margin-top: 50px;
+        max-width: 824px;
     }
     section .heroSection .heroCopy .header .chance,
     section .heroSection .heroCopy .header .qualityLife {
         height: 100%;
-        font-size: 50px;
+        font-size: 60px;
+        line-height: 80px;
     }
     section .heroSection .button {
-        width: 250px;
+        width: 310px;
+        height: 75px;
         margin-left: 70px;
+    }
+    section .heroSection .button .learnMore {
+        font-size: 20px;
     }
     section .welcomeToGoshenspring .left .headerText {
         width: 492px;
@@ -1561,7 +1528,7 @@ form .ianar .check-ianar label {
         width: 100%;
     }
     .tertiaryButton {
-        width: 220px;
+        width: 240px;
     }
     .tertiaryButton .readMore {
         font-size: 25px;
@@ -1569,8 +1536,14 @@ form .ianar .check-ianar label {
     .tertiaryButton .frame6 .icon1,
     .tertiaryButton .frame6 .icon2,
     .tertiaryButton .frame6 .icon3 {
-        width: 25px;
-        height: 28px;
+        width: 30px;
+        height: 30px;
+    }
+    .tertiaryButton .frame6 .icon2 {
+        right: 20px;
+    }
+    .tertiaryButton .frame6 .icon3 {
+        right: 40px;
     }
     section .welcomeToGoshenspring .scheduleAssessmentOverlay .oQTText {
         width: 300px;
@@ -1901,42 +1874,6 @@ form .ianar .check-ianar label {
     }
     .cntct {
         margin-right: 40px;
-    }
-    section .heroSection {
-        background-size: 1300px;
-        height: 796px;
-    }
-    section .heroSection .heroCopy {
-        height: 254px;
-        margin-left: 60px;
-    }
-    section .heroSection .heroCopy .header {
-        height: 160px;
-        width: 850px;
-    }
-    section .heroSection .heroCopy .header .chance {
-        font-size: 60px;
-        line-height: 80px;
-    }
-    section .heroSection .heroCopy .header .qualityLife {
-        font-size: 60px;
-        color: #054B05;
-        line-height: 80px;
-    }
-    section .heroSection .heroCopy .subHeader {
-        width: 824px;
-        height: 70px;
-        font-size: 25px;
-        line-height: 35px;
-    }
-    section .heroSection .button {
-        margin-left: 60px;
-        width: 310px;
-        height: 75px;
-    }
-    section .heroSection .button .learnMore {
-        font-size: 20px;
-        line-height: 35px;
     }
 }
 @media screen and (min-width: 1230px) {
