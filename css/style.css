@@ -66,18 +66,15 @@ header .nav-bar .logo1 .gshcs2 {
 }
 .nav_overlay {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     top: 0;
     z-index: 1;
     height: 100vh;
-    width: 90%;
-    overflow-y: hidden;
+    width: 95%;
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
 }
 .nav_overlay.active {
-    overflow-y: hidden;
     display: block;
 }
 header .nav-bar {
@@ -1331,11 +1328,11 @@ form .ianar .check-ianar label {
     }
     section .welcomeToGoshenspring .scheduleAssessmentOverlay  {
         border-radius: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     section .oCR .sAO {
         border-radius: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 }
 @media (min-width: 510px) {
