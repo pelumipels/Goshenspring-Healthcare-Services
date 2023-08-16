@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 body {
     width: 100%;
@@ -13,13 +12,11 @@ body {
     align-items: center;
     background-color: #F3FDF3;
     overflow-x: hidden;
-    /* overflow-y: hidden; */
     position: relative;
 }
 html {
     font-family: 'Kadwa', serif;
     scroll-behavior: smooth;
-    /* position: relative; */
     overflow-x: hidden;
 }
 a {
