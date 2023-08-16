@@ -288,7 +288,11 @@ section .heroSection .button {
     align-items: center;
     cursor: pointer;
     gap: 10px;
-    display: inline-flex
+    display: inline-flex;
+    transition: background-color 0.3s ease;
+}
+section .heroSection .button:hover {
+    background-color: rgba(253, 218, 13, 0.6);
 }
 section .heroSection .button .learnMore {
     color: black;
@@ -364,14 +368,18 @@ section .welcomeToGoshenspring .left .copy  {
     align-items: center;
     cursor: pointer;
 }
-.tertiaryButton .readMore  {
+.tertiaryButton .readMore {
     color: #FDDA0D;
     font-size: 16px;
     font-family: Kadwa;
     font-weight: 400;
     text-transform: uppercase;
+    transition: color 0.3s ease;
     align-self: center;
     word-wrap: break-word;
+}
+.tertiaryButton .readMore:hover {
+    color: rgba(253, 218, 13, 0.6);
 }
 .tertiaryButton .frame6 {
     display: flex;
@@ -384,6 +392,12 @@ section .welcomeToGoshenspring .left .copy  {
 .tertiaryButton .frame6 .icon3 {
     width: 22px;
     height: 20px;
+    transition: opacity 0.3s ease;
+}
+.tertiaryButton .frame6 .icon1:hover,
+.tertiaryButton .frame6 .icon2:hover,
+.tertiaryButton .frame6 .icon3:hover {
+    opacity: 0.4;
 }
 .tertiaryButton .frame6 .icon2 {
     position: relative;
@@ -459,12 +473,16 @@ section .welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore {
     cursor: pointer;
     font-size: 16px;
     justify-content: center;
+    transition: background-color 0.3s ease;
     align-items: center;
     font-family: Kadwa;
     font-weight: 400;
     line-height: 25px;
     display: inline-flex;
     word-wrap: break-word
+}
+section .welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore:hover {
+    background-color: rgba(253, 218, 13, 0.6);
 }
 .body3 {
     width: 90%;
@@ -574,10 +592,14 @@ section .whatWeDo .button {
     margin-bottom: 20px;
     border-radius: 10px;
     border: 0.50px #FDDA0D solid;
+    transition: background-color 0.3s ease;
     justify-content: center;
     align-items: center;
     display: flex;
     cursor: pointer;
+}
+section .whatWeDo .button:hover {
+    background-color: rgba(253, 218, 13, 0.6);
 }
 section .whatWeDo .button .learnMore {
     color: #FDDA0D;
@@ -617,11 +639,15 @@ section .meetTheTeam .primaryButton {
     position: absolute;
     cursor: pointer;
     background: #FDDA0D;
+    transition: background-color 0.3s ease;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     display: inline-flex
+}
+section .meetTheTeam .primaryButton:hover {
+    background-color: rgba(253, 218, 13, 0.6);
 }
 section .meetTheTeam .primaryButton .learnMore {
     color: black;
@@ -743,11 +769,15 @@ section .oCR .sAO .button .learnMore{
     font-size: 16px;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
     font-family: Kadwa;
     font-weight: 400;
     line-height: 25px;
     display: inline-flex;
     word-wrap: break-word;
+}
+section .oCR .sAO .button .learnMore:hover {
+    background-color: rgba(253, 218, 13, 0.6);
 }
 .body6 {
     width: 90%;
@@ -838,9 +868,13 @@ section .feedback .sAO .button .learnMore {
     justify-content: center;
     height: 50px;
     background: #FDDA0D;
+    transition: background-color 0.3s ease;
     line-height: 25px;
     display: flex;
     word-wrap: break-word
+}
+section .feedback .sAO .button .learnMore:hover {
+    background-color: rgba(253, 218, 13, 0.6);
 }
 .body7 {
     width: 90%;
@@ -1471,15 +1505,44 @@ form .ianar .check-ianar label {
         margin: auto 0;
     }
     .nav-bar .nav-list li a {
+        position: relative;
+        display: inline-block;
         font-size: 20px;
         font-family: Kadwa;
         font-weight: 400;
         text-transform: capitalize;
+        transition: transform 0.3s ease;
         word-wrap: break-word
     }
-    /* .nav-bar .nav-list li a:hover {
-        animation: myAnimation 1s ease-in-out 0.5s 3 alternate both;
-    } */
+    .nav-bar .nav-list li a .link-text {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+    .nav-bar .nav-list li a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 90%;
+        margin-left: 6%;
+        height: 2px;
+        background: #FDDA0D;
+        border-radius: 40px;
+        transform: scaleX(0);
+    }
+    .nav-bar .nav-list li:first-child a::before {
+        background: white;
+    }
+    .nav-bar .nav-list li a:hover .link-text {
+        color: #FDDA0D;
+        transform: translateY(-5px);
+    }
+    .nav-bar .nav-list li a:hover::before {
+        transform: scaleX(1);
+    }
+    .nav-bar .nav-list li:first-child a .link-text:hover {
+        color: white;
+    }
     .nav-bar .nav-list li:first-child a {
         height: auto;
         color: #FDDA0D;
@@ -1949,3 +2012,9 @@ form .ianar .check-ianar label {
     }
   }
    */
+
+   /* // On click
+// Navigate to: "SUBMIT REFERRALS PAGE";
+// Animate: Smart animate;
+animation-timing-function: ease-out;
+animation-duration: 400ms; */
