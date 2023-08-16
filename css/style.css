@@ -11,11 +11,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #F3FDF3;
+    overflow-x: hidden;
 }
 html {
     font-family: 'Kadwa', serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 a {
     text-decoration: none;
@@ -64,26 +65,30 @@ header .nav-bar .logo1 .gshcs2 {
 }
 .nav_overlay {
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* right: 0; */
+    /* margin: 0 auto; */
     top: 0;
     z-index: 1;
     height: 100vh;
-    width: 100%;
+    width: 90%;
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
 }
 .nav_overlay.active {
+    /* margin: 0 auto; */
     display: block;
 }
 header .nav-bar {
-    background-color: white;
+    background-color: #008000;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     right: 0;
     position: absolute;
     top: 0;
-    width: 80%;
+    width: 100%;
     height: 100vh;
     text-align: center; 
     transition: 0.5s ease-in-out all;
@@ -91,10 +96,14 @@ header .nav-bar {
     overflow-x: hidden;
     z-index: 2;
 }
+.nav-bar nav {
+    background-color: white;
+}
 header .nav-bar .logo1 {
-    width: 170px;
+    width: 168px;
     height: auto;
-    margin: 20px;
+    margin: 30px 0;
+    margin-left: 0;
 }
 header .nav-bar .logo1 .gshcs2 {
     font-size: 10px;
@@ -105,8 +114,8 @@ header .nav-bar .logo1 .gshcs2 {
 header .nav-bar .closeButton {
     width: 30px;
     right: 0;
-    top: 17px;
-    margin-right: 20px;
+    top: 25px;
+    /* margin-right: 20px; */
     position: absolute;
     height: 41px;
     cursor: pointer;
@@ -136,9 +145,10 @@ header .nav-bar .closeButton .close {
     background-color: #008000;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     gap: 20px;
-    height: 100vh;
+    height: 100%;
+    /* height: 100vh; */
     top: 0;
 }
 .nav-bar .nav-list li {
@@ -169,7 +179,11 @@ header .nav-bar .closeButton .close {
     color: black;
 }
 header .nav-bar.nav-toggle {
+    width: 60%;
+    /* margin-right: 30px; */
+    right: 5%;
     transform: translateX(0%);
+    /* height: 100vh; */
 }
 header .nav-bar menu.close {
     transform: translateX(0%);
@@ -1275,6 +1289,14 @@ form .ianar .check-ianar label {
     cursor: not-allowed;
     pointer-events: none;
 }
+@media screen and (min-width: 450px) and (max-width: 877px) {
+    header .nav-bar .logo1 {
+        margin-left: 30px;
+    }
+    header .nav-bar .closeButton {
+        margin-right: 30px;
+    }
+}
 @media screen and (max-width: 877px) {
     section .heroSection1 {
         display: none;
@@ -1375,6 +1397,9 @@ form .ianar .check-ianar label {
     header .nav-bar .closeButton {
         display: none;
     }
+    .nav_overlay.active {
+        display: none;
+    }
     .logo2 {
         margin-left: 30px;
         margin-bottom: 30px;
@@ -1461,6 +1486,9 @@ form .ianar .check-ianar label {
         text-transform: capitalize;
         word-wrap: break-word
     }
+    /* .nav-bar .nav-list li a:hover {
+        animation: myAnimation 1s ease-in-out 0.5s 3 alternate both;
+    } */
     .nav-bar .nav-list li:first-child a {
         height: auto;
         color: #FDDA0D;
@@ -1919,3 +1947,14 @@ form .ianar .check-ianar label {
         background-size: 1600px;
     }
 }
+/* @keyframes myAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+   */
