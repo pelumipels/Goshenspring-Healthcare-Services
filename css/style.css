@@ -16,7 +16,6 @@ body {
 html {
     font-family: 'Kadwa', serif;
     scroll-behavior: smooth;
-    /* overflow-x: hidden; */
 }
 a {
     text-decoration: none;
@@ -67,8 +66,6 @@ header .nav-bar .logo1 .gshcs2 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    /* right: 0; */
-    /* margin: 0 auto; */
     top: 0;
     z-index: 1;
     height: 100vh;
@@ -77,7 +74,6 @@ header .nav-bar .logo1 .gshcs2 {
     display: none;
 }
 .nav_overlay.active {
-    /* margin: 0 auto; */
     display: block;
 }
 header .nav-bar {
@@ -115,7 +111,6 @@ header .nav-bar .closeButton {
     width: 30px;
     right: 0;
     top: 25px;
-    /* margin-right: 20px; */
     position: absolute;
     height: 41px;
     cursor: pointer;
@@ -145,10 +140,8 @@ header .nav-bar .closeButton .close {
     background-color: #008000;
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
     gap: 20px;
     height: 100%;
-    /* height: 100vh; */
     top: 0;
 }
 .nav-bar .nav-list li {
@@ -180,10 +173,8 @@ header .nav-bar .closeButton .close {
 }
 header .nav-bar.nav-toggle {
     width: 60%;
-    /* margin-right: 30px; */
     right: 5%;
     transform: translateX(0%);
-    /* height: 100vh; */
 }
 header .nav-bar menu.close {
     transform: translateX(0%);
@@ -279,7 +270,6 @@ section .heroSection .heroCopy .header .qualityLife {
 }
 section .heroSection .heroCopy .subHeader {
     max-width: 500px;
-    /* width: 243px; */
     color: black;
     font-size: 14px;
     font-family: Kadwa;
