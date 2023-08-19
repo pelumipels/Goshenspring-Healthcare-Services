@@ -1,22 +1,24 @@
 // Function to add the form on click
+var number = 1;
 function addForm() {
     const formContainer = document.getElementById('formContainer');
     const formHTML = `
-            <form action="" class="data-form">
-                <div class="part4">
-                    <div class="eachDiv refer">
-                        <label class="refer" for="refer"><span>NAME OF REFEREE </span><span>*</span></label>
-                        <input type="text" name="refer" id="refer" placeholder="Enter your city here" onkeypress="// noinspection JSDeprecatedSymbols
-                        return a(event)" required>
-                    </div>
-                    
-                    <div class="eachDiv emailA">
-                        <label class="emailA" for="emailA"><span>EMAIL ADDRESS OF REFEREE</span><span>*</span></label>
-                        <input type="email" name="emailAd" id="emailA" placeholder="Choose your state" required>
-                    </div>
+        <div class="frame41"></div>
+        <form action="" class="data-form">
+            <div class="part6">
+                <div>
+                    <label for="refer${number}"><span>NAME OF REFEREE </span><span>*</span></label>
+                    <input type="text" name="refer" id="refer${number}" placeholder="Enter your city here" onkeypress="// noinspection JSDeprecatedSymbols
+                    return a(event)" required>
                 </div>
-            </form>
-            <button class="remove-form">Delete</button>
+                
+                <div>
+                    <label for="emailAd${number}"><span>EMAIL ADDRESS OF REFEREE </span><span>*</span></label>
+                    <input type="email" name="emailAd" id="emailAd${number}" placeholder="Choose your state" required>
+                </div>
+            </div>
+        </form>
+        <button class="remove-form">Remove</button>
     `;
 
     // Create a new form element and append it to the container
@@ -54,81 +56,65 @@ function sendDataToGoogleSheets(formData) {
     });
 }
 
-// Function to handle form submission
-function handleSubmit(event) {
-    event.preventDefault();
-
-    const formData = new FormData(event.target);
-    sendDataToGoogleSheets(formData);
-}
-
 // Add event listener to the "Add Form" button
 const addFormButton = document.querySelector('.referCircle');
 addFormButton.addEventListener('click', () => {
     addForm();
-    const forms = document.querySelectorAll('.data-form');
-    forms.forEach(form => {
-        form.addEventListener('submit', handleSubmit);
-    });
+    number++;
 });
 
 // Add event listener to the "Send Data to Google Sheets" button
 const sendDataButton = document.querySelector('.form-submit');
 sendDataButton.addEventListener('click', () => {
 
-    const formsDefault = document.querySelectorAll('form[name="goshenspring-healthcare-services"]');
+    const formsDefault = document.querySelector('form[name="goshenspring-healthcare-services"]');
     const nameDefault = document.querySelector('form[class="default12"]');
     const forms = document.querySelectorAll('.data-form');
     const formData = new FormData(nameDefault);
     sendDataButton.classList.add('isLoading');
+    var defaultEmail;
     defaultEmail = formData.get('emailA');
     sendDataButton.disabled = true;
     let allFormsValid = [];
-    var defaultEmail;
 
-    formsDefault.forEach(form => {
-        if (!form.checkValidity()) {
-            allFormsValid.push(false);
-            form.reportValidity(); // Display validation messages
-        } else {
-            allFormsValid.push(true);
+    // formsDefault.forEach(form => {
+        if (!formsDefault.checkValidity()) {
+            formsDefault.reportValidity(); // Display validation messages
+            sendDataButton.disabled = false;
+            sendDataButton.classList.remove('isLoading');
         }
-    });
-    
-    forms.forEach(form => {
-        if (!form.checkValidity()) {
-            allFormsValid.push(false);
-            form.reportValidity(); // Display validation messages
-        } else {
-            allFormsValid.push(true);
+        if (forms.length > 0) {
+            forms.forEach(form => {
+                if (!form.checkValidity()) {
+                    allFormsValid.push(false);
+                    form.reportValidity(); // Display validation messages
+                    sendDataButton.disabled = false;
+                    sendDataButton.classList.remove('isLoading');
+                } else {
+                    allFormsValid.push(true);
+                }
+            });
         }
-    });
 
-    if (allFormsValid.every(value => value === true)) {
-        alert("Thank you for your submission!");
 
-        formsDefault.forEach(form => {
-            const formData = new FormData(form);
-            if (formData.get('emailA') === null) {
-                formData.append('emailA', defaultEmail)
+        if (formsDefault.checkValidity() && allFormsValid.every(value => value === true)) {
+            alert("Thank you for your submission!");
+            const formData1 = new FormData(formsDefault);
+            sendDataToGoogleSheets(formData1);
+            formsDefault.reset();
+            
+            if (forms.length > 0) {
+                forms.forEach(form => {
+                    const formData2 = new FormData(form);
+                    if (formData2.get('emailA') === null) {
+                        formData2.append('emailA', defaultEmail)
+                    }
+                    // If all forms are valid, submit them
+                    sendDataToGoogleSheets(formData2);
+                    form.reset();
+                });
             }
-            // If all forms are valid, submit them
-            form.reset();
-            sendDataToGoogleSheets(formData);
-        });
-
-        forms.forEach(form => {
-            const formData = new FormData(form);
-            if (formData.get('emailA') === null) {
-                formData.append('emailA', defaultEmail)
-            }
-            // If all forms are valid, submit them
-            form.reset();
-            sendDataToGoogleSheets(formData);
-        });
-
-    } else {
-        sendDataButton.disabled = false;
-        sendDataButton.classList.remove('isLoading');
-    }
+            sendDataButton.disabled = false;
+            sendDataButton.classList.remove('isLoading');
+        }
 });

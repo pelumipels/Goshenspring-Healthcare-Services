@@ -14,6 +14,9 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+::selection {
+    background-color: #FDDA0D;
+}
 html {
     font-family: 'Kadwa', serif;
     scroll-behavior: smooth;
@@ -135,6 +138,12 @@ header .nav-bar .closeButton .close {
     font-weight: 400;
     line-height: 10px;
     word-wrap: break-word
+}
+.line8 {
+    width: auto;
+    height: 100%;
+    border: 0.1rem #FDDA0D solid;
+    display: none;
 }
 .nav-bar .nav-list {
     position: relative;
@@ -876,8 +885,12 @@ section .feedback .sAO .button .learnMore {
 section .feedback .sAO .button .learnMore:hover {
     background-color: rgba(253, 218, 13, 0.6);
 }
-.body7 {
+.body7,
+.body10 {
     width: 90%;
+}
+.body10 {
+    background-color: #F3FDF3;
 }
 footer {
     padding: 10px 0;
@@ -942,12 +955,6 @@ footer .nav-bar {
 .body9 {
     width: 100%;
 }
-.body8 {
-    background-color: white;
-}
-.body8 {
-    width: 90%;
-}
 .formPageTitle {
     display: none;
 }
@@ -966,22 +973,18 @@ path {
 }
 .rqI {
     margin-left: 10px;
+    color: #FF0000;
+    font-family: Kadwa;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
 }
 .rqI > span:first-child {
-    color: #FF0000;
     font-size: 18px;
-    font-family: Kadwa;
-    font-weight: 400;
-    word-wrap: break-word
 }
 .rqI > span:nth-child(2) {
-    color: #FF0000;
     font-size: 16px;
-    font-family: Kadwa;
-    font-weight: 400;
-    word-wrap: break-word
 }
-
 .frame40 {
     width: 93%;
     height: 3px;
@@ -989,164 +992,132 @@ path {
     background: black;
     border-radius: 5px
 }
-form {
-    margin-bottom: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.body8 {
+    background-color: white;
+    width: 90%;
 }
-form .part1,
-form .part3,
-form .part4,
-form .part5 {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+label {
+    display: block;
 }
-form .part1 .eachDiv,
-form .part3 .eachDiv,
-form .part4 .eachDiv,
-form .part5 .eachDiv {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-form .part5 .eachDiv {
-    gap: 0;
-}
-form .part5 .eachDiv .q1,
-form .part5 .eachDiv .q2,
-form .part5 .eachDiv .q3,
-form .part5 .eachDiv .q4,
-form .part5 .eachDiv .q5,
-form .part5 .eachDiv .q6, .cmt {
-    color: #333333;
-    font-size: 16px;
+input,
+select,
+textarea {
     font-family: Kadwa;
-    font-weight: 700;
-    line-height: 30px;
-    word-wrap: break-word
+    outline: none;
+    font-style: normal;
+    padding: 17px 0 18px 21px;
+    border: 0.5px solid rgba(153, 157, 160, 0.40);
+    background-color: white;
 }
-form .part5 .eachDiv .q1 span,
-form .part5 .eachDiv .q2 span,
-form .part5 .eachDiv .q3 span,
-form .part5 .eachDiv .q4 span,
-form .part5 .eachDiv .q5 span,
-form .part5 .eachDiv .q6 span,
-form .part5 .cmtspan {
-    display: none;
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #FDDA0D;
 }
-form .part5 .eachDiv .op1 {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 1px;
-    margin-left: 20px;
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #008000;
 }
-form .part5 .eachDiv .op1 div {
-    font-size: 16px;
-    font-family: Kadwa;
+input::placeholder,
+textarea::placeholder {
+    color: rgba(128, 128, 128, 0.40);
+    font-size: 12px;
     font-weight: 400;
-    word-wrap: break-word;
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    flex-grow: 1;
-}
-form .part5 .eachDiv .op1 div input {
-    width: 25px;
-}
-form label {
-    width: auto;
-}
-form label > span:first-child {
-    color: #333333;
-    font-size: 16px;
-    font-family: Kadwa;
-    font-weight: 700;
-    line-height: 15px;
-    word-wrap: break-word
-}
-form label > span:nth-child(2) {
-    color: #FF0000;
-    font-size: 25px;
-    font-family: Kadwa;
-    font-weight: 700;
     line-height: 20px;
-    word-wrap: break-word
 }
-input[type=text], input[type=email], input[type=date], input[type=number]{
-    outline: none;
-    height: 20px;
-    width: auto;
-    padding: 17px 0 18px 21px;
-}
-select {
-    height: 100%;
-    padding: 17px 0 18px 21px;
-    width: auto;
-}
-input[type="radio"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 50px;
-    height: 25px;
-    border: 0.1px solid #aaa;
-    border-radius: 50%;
-    outline: none;
-    margin-right: 5px;
-    align-self: center;
-    cursor: pointer;
-}
-input[type="radio"]:checked {
-    background-color: #008000;
-}
-input[type="radio"]:hover {
-    background-color: #808080;
-}
-.cympcm-container {
+.part1 div,
+.part3 div,
+.part4 div,
+.part5 > div,
+.part6 div {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
     gap: 15px;
 }
-.in-cympcm {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    height: auto;
-}
-form .cympcm {
-    font-family: Kadwa;
+.part1 div label,
+.part2 > div > label,
+.part3 div label,
+.part4 div,
+.part5 > div > div:first-child,
+.part6 div {
     font-weight: 700;
-    line-height: 30px;
-    word-wrap: break-word;
-    text-align: center
 }
-form .cympcm > span:first-child {
-    color: #333333;
+.part1 div label > span:first-child,
+.part2 > div > label > span:first-child,
+.part3 div label > span:first-child,
+.part4 div label > span:first-child,
+.part5 > div > div:first-child span:first-child,
+.part6 div label > span:first-child {
+    color: #333;
+    line-height: 15px;
     font-size: 16px;
 }
-form .cympcm > span:nth-child(2) {
-    color: #FF0000;
+.part1 div label > span:nth-child(2),
+.part2 > div > label > span:nth-child(2),
+.part3 div:nth-child(7) label > span:nth-child(2),
+.part4 div label > span:nth-child(2),
+.part5 > div > div:first-child span:nth-child(2),
+.part6 div label > span:nth-child(2) {
+    color: #F00;
+    line-height: 20px;
     font-size: 25px;
 }
-form .cympcm-container .in-cympcm div {
-    display: flex;
-    column-gap: 10px;
+.part5 > div > div:nth-child(2) {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    row-gap: 20px;
+    margin-right: 60px;
 }
-form .cympcm-container div label {
+.part5 > div > div:nth-child(2) div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.part5 > div > div:nth-child(2) label {
+    color: #333;
+    font-family: Kadwa;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+}
+.part5 > div:nth-child(6) > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 40px;
+}
+.part2 > div > label {
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.part2 > div > div {
+    margin: 25px 0;
+}
+.part2 > div > div > div {
     display: flex;
     align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-left: 10px;
 }
-form .cympcm-container div input {
-    width: 30px;
-    height: 30px;
+.part2 > div > div > div > label {
+    color: #333;
+    font-size: 17px;
+    font-weight: 400;
+}
+.part2 input,
+.part5 > div > div:nth-child(2) input {
+    width: 25px;
+    height: 25px;
     border-radius: 15px;
-    outline: 1px solid #999DA0;
+    padding: 0;
+    border: none;
+    outline: 0.1px solid #999DA0;;
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
@@ -1155,59 +1126,118 @@ form .cympcm-container div input {
     justify-content: center;
     align-items: center;
 }
-form .cympcm-container div input:after {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f192";
-    font-size: 50px;
-    color: white;
-    display: none;
-}
-form .cympcm-container div input:hover {
+.part2 input:hover,
+.part5 > div > div:nth-child(2) input:hover {
     background-color: #a5a5a5;
 }
-form .cympcm-container div input:checked {
+.part2 input:checked,
+.part5 > div > div:nth-child(2) input:checked {
     background-color: #008000;
 }
-form .cympcm-container div input:checked:after {
-    display: block;
-}
 textarea {
-    width: auto;
     height: 166px;
     padding: 31px 0 0 16px;
 }
-textarea:focus {
-    outline: none;
+.referCP {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-right: none;
+    border-left: none;
+    border-top: 0.50px rgba(153, 157, 160, 0.70) solid;
+    border-bottom: 0.50px rgba(153, 157, 160, 0.70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin: 35px 0;
 }
-form .ianar {
+.referCP p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000;
+    font-weight: 400;
+}
+.referCircle {
+    width: 35px;
+    height: 35px;
+    background-color: #008000;
+    border-radius: 17.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.referPlus {
+    height: auto;
+    width: auto;
+    font-weight: 900px;
+    font-size: 40px;
+    font-family: Kadwa;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+.data-form {
+    margin-top: 20px;
+}
+.frame41 {
+    width: 93%;
+    height: 2px;
+    margin: 20px auto;
+    background: #FDDA0D;
+    border-radius: 5px;
+}
+.remove-form {
+    background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 400px;
+}
+.isLoading {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.ianar {
     height: 79px;
     width: 293px;
     display: flex;
-    margin-left: 2px;
+    border-radius: 10px;
+    margin-top: 35px;
     background: rgba(239.26, 239.26, 239.26, 0.45);
     justify-content: space-evenly;
     align-items: center;
 }
-form .ianar .check-ianar {
+.ianar .check-ianar {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-form .ianar .check-ianar label {
+.ianar .check-ianar label {
     color: #808080;
     font-size: 15px;
     font-family: Roboto Flex;
     font-weight: 400;
     line-height: 20px;
-    word-wrap: break-word
 }
 .chkb {
     width: 35px;
     height: 35px;
+    padding: 0;
     border-radius: 10px;
-    outline: 1px solid #999DA0;
+    border: none;
+    outline: 0.1px solid #999DA0;
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
@@ -1216,22 +1246,14 @@ form .ianar .check-ianar label {
     justify-content: center;
     align-items: center;
 }
-.chkb:after {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f00c";
-    font-size: 35px;
-    color: white;
-    display: none;
-}
 .chkb:hover {
     background-color: #a5a5a5;
 }
+.chkb:focus {
+    border-color: none;
+}
 .chkb:checked {
     background-color: #008000;
-}
-.chkb:checked:after {
-    display: block;
 }
 .ianar .reCAPTCHA {
     display: flex;
@@ -1262,8 +1284,10 @@ form .ianar .check-ianar label {
     background-color: #FDDA0D;
     font-size: 16px;
     border: none;
-    margin-bottom: 10px;
-    margin-left: 2px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    outline: none;
+    padding: 0;
     border-radius: 10px;
     font-family: Kadwa;
     font-weight: 400;
@@ -1274,49 +1298,6 @@ form .ianar .check-ianar label {
 }
 .form-submit:hover {
     background-color: rgba(253, 218, 13, 0.6);
-}
-.referCP {
-    display: flex;
-    gap: 10px;
-    border-right: none;
-    border-left: none;
-    border-top: 0.50px rgba(153, 157, 160, 0.70) solid;
-    border-bottom: 0.50px rgba(153, 157, 160, 0.70) solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-.referCircle {
-    width: 35px;
-    height: 35px;
-    background-color: #008000;
-    border-radius: 17.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.referPlus {
-    height: auto;
-    width: auto;
-    font-weight: 900px;
-    font-size: 40px;
-    font-family: Kadwa;
-    font-weight: 700;
-    line-height: 30px;
-    word-wrap: break-word;
-    align-self: center;
-    align-items: center;
-    align-content: center;
-    color: white;
-}
-.data-form {
-    margin-top: 10px;
-}
-.isLoading {
-    opacity: 0.6;
-    cursor: not-allowed;
-    pointer-events: none;
 }
 @media screen and (min-width: 450px) and (max-width: 877px) {
     header .nav-bar .logo1 {
@@ -1491,6 +1472,9 @@ form .ianar .check-ianar label {
         flex-direction: row;
         justify-content: space-around;
     }
+    .line8 {
+        display: block;
+    }
     .nav-bar .nav-list {
         width: 100%;
         height: 99px;
@@ -1560,7 +1544,7 @@ form .ianar .check-ianar label {
     .closeButton {
         display: none;
     }
-    .body1, .body2, .body3, .body4, .body5, .body6, .body7 {
+    .body1, .body2, .body3, .body4, .body5, .body6, .body7, .body10 {
         width: 100%;
     }
     section .heroSection {
@@ -1841,84 +1825,135 @@ form .ianar .check-ianar label {
         top: 40px;
         display: block;
     }
-    form .part1,
-    form .part3,
-    form .part4 {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    form .part1 .name,
-    form .part3 .cmt {
-        width: 100%;
-    }
-    form .part5 .eachDiv .q1,
-    form .part5 .eachDiv .q2,
-    form .part5 .eachDiv .q3,
-    form .part5 .eachDiv .q4,
-    form .part5 .eachDiv .q5,
-    form .part5 .eachDiv .q6, .cmt {
-        color: #333333;
-        font-size: 20px;
-        font-family: Kadwa;
+    .rqI {
+        margin-left: 30px;
         font-weight: 700;
-        line-height: 20px;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        word-wrap: break-word
     }
-    form .part5 .eachDiv .q1 span,
-    form .part5 .eachDiv .q2 span,
-    form .part5 .eachDiv .q3 span,
-    form .part5 .eachDiv .q4 span,
-    form .part5 .eachDiv .q5 span,
-    form .part5 .eachDiv .q6 span,
-    form .part5 .cmtspan {
-        display: inline-block;
-        color: #FF0000;
+    .rqI > span:first-child,
+    .rqI > span:nth-child(2) {
         font-size: 25px;
-        font-family: Kadwa;
-        font-weight: 700;
+        line-height: 30px;
+    }
+    .frame40 {
+        margin: 0 0 20px 30px;
+        height: 5px;
+        width: 92%;
+    }
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 16px;
+    }
+    .part1 {
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+        gap: 30px 100px;
+        margin-bottom: 40px;
+    }
+    form[name="goshenspring-healthcare-services"] .part4 {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        gap: 0 80px;
+    }
+    .data-form .part6 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 80px;
+    }
+    .part1 div:first-child {
+        grid-column: span 2;
+    }
+    .part1 div {
+        margin-bottom: 0;
+    }
+    .part5 > div > div:first-child {
+        text-transform: uppercase;
+    }
+    .part1 div label > span:first-child,
+    .part2 > div > label > span:first-child,
+    .part3 div label > span:first-child,
+    .part4 div label > span:first-child,
+    .part5 > div > div:first-child span:first-child,
+    .part6 div label > span:first-child {
+        font-size: 20px;
         line-height: 20px;
-        word-wrap: break-word
     }
-    form .part5 .eachDiv .op1 {
-        width: 550px;
-        row-gap: 10px;
+    .part2 > div > label {
+        text-align: left;
     }
-    form .part5 .eachDiv .op1 div {
-        margin-right: 50px;
+    .part2 > div > div {
+        display: flex;
         justify-content: space-between;
-    
     }
-    form .part5 .eachDiv .op1 div input {
-        width: 30px;
-        height: 30px;
+    .part2 > div > div > div {
+        padding-left: 0;
     }
-    form .part1 .address,
-    form .part1 .city,
-    form .part1 .state,
-    form .part1 .zipCode,
-    form .part3 .emailAddres,
-    form .part3 .fCode,
-    form .part3 .phNum,
-    form .part3 .ptz,
-    form .part3 .pfd,
-    form .part3 .pft,
-    form .part4 .name1,
-    form .part4 .emailA,
-    form .part4 .refer {
-        width: 40%;
-        flex-grow: 1;
+    .part2 > div > div > div > label {
+        font-size: 18px;
+        font-weight: 700;
     }
-    form .eachDiv .ptz:first-child, 
-    form .eachDiv .pfd:first-child,
-    form .eachDiv .pft:first-child,
-    form .eachDiv .emailA:first-child,
-    form .eachDiv .refer {
-        width: 100%;
+    .part2 input,
+    .part5 > div > div:nth-child(2) input {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
     }
-    form .eachDiv label {
-        width: 100%;
+    .part3 {
+        display: grid;
+        grid-template: repeat(3, 1fr) / 1fr 1fr;
+        gap: 30px 100px;
+    }
+    .part3 div:last-child {
+        grid-column: span 2;
+    }
+    .part5 > div {
+        margin-bottom: 40px;
+    }
+    .part5 > div > div:nth-child(2) {
+        margin-right: auto;
+        margin-left: 30px;
+        gap: 15px 50px;
+    }
+    .part5 > div > div:nth-child(2) div {
+        justify-content: space-between;
+        gap: 70px;
+    }
+    .part5 > div > div:first-child span:first-child {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .part5 > div > div:nth-child(2) label {
+        font-size: 16px;
+    }
+    .part5 > div:nth-child(6) > div:nth-child(2) {
+        justify-content: flex-start;
+        gap: 100px;
+        padding: 0 30px;
+    }
+    .referCP {
+        gap: 20px;
+    }
+    .referCP p {
+        font-size: 25px;
+    }
+    .referCircle {
+        width: 53px;
+        height: 53px;
+        border-radius: 26.5px;
+    }
+    .referPlus {
+        font-size: 55px;
+    }
+    .ianar {
+        height: 92px;
+        width: 378px;
+        margin-top: 45px;
+    }
+    .form-submit {
+        width: 310px;
+        height: 75px;
+        font-size: 20px;
+        margin-top: 35px;
+        margin-bottom: 45px;
     }
 }
 @media screen and (min-width: 1018px) {
@@ -2005,20 +2040,3 @@ form .ianar .check-ianar label {
         background-size: 1600px;
     }
 }
-/* @keyframes myAnimation {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-   */
-
-   /* // On click
-// Navigate to: "SUBMIT REFERRALS PAGE";
-// Animate: Smart animate;
-animation-timing-function: ease-out;
-animation-duration: 400ms; */

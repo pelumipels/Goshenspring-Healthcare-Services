@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="text/javascript">
         function a(event) {
             let char = event.which;
@@ -56,6 +55,7 @@
                 <div class="x">X</div>
                 <div class="close">Close</div>
             </div>
+            <div class="line8"></div>
             <ul class="nav-list">
                 <li><a href="/index.html#home"><span class="link-text">Home</span></a></li>
                 <li><a href="/index.html#about-us"><span class="link-text">About Us</span></a></li>
@@ -86,75 +86,77 @@
     <div class="frame40"></div>
     <form action="" name="goshenspring-healthcare-services">
         <div class="part1">
-            <div class="eachDiv name">
-                <label class="name" for="name"><span>NAME </span><span>*</span></label>
+            <div>
+                <label for="name"><span>NAME </span><span>*</span></label>
                 <input type="text" name="name" id="name" placeholder="Enter your name here" onkeypress="// noinspection JSDeprecatedSymbols
                 return a(event)" required>
             </div>
-            <div class="eachDiv address">
-                <label class="address" for="address"><span>ADDRESS </span><span>*</span></label>
+            <div>
+                <label for="address"><span>ADDRESS </span><span>*</span></label>
                 <input type="text" name="address" id="address" placeholder="Enter your address here" required>
             </div>
-            <div class="eachDiv city">
-                <label class="city" for="city"><span>CITY </span><span>*</span></label>
+            <div>
+                <label for="city"><span>CITY </span><span>*</span></label>
                 <input type="text" name="city" id="city" placeholder="Enter your city here" required>
             </div>
-            <div class="eachDiv state">
-                <label class="state" for="state"><span>STATE </span><span>*</span></label>
+            <div>
+                <label for="state"><span>STATE </span><span>*</span></label>
                 <select name="state" id="state" required>
-                    <option value="" disabled selected>Choose your state</option>
+                    <option value="" disabled selected class="option">Choose your state</option>
                 </select>
             </div>
-            <div class="eachDiv zipCode">
-                <label class="zipCode" for="zipCode"><span>ZIP CODE </span><span>*</span></label>
+            <div>
+                <label for="zipCode"><span>ZIP CODE </span><span>*</span></label>
                 <input type="text" name="zipCode" id="zipCode" placeholder="Enter your zip code here" required>
             </div>
         </div>
-        <div class="cympcm-container">
-            <label class="cympcm"><span>CHOOSE YOUR MOST PREFERRED CONTACT METHOD </span><span>*</span></label>
-            <div class="in-cympcm">
+        <div class="part2">
+            <div>
+                <label><span>CHOOSE YOUR MOST PREFERRED CONTACT METHOD </span><span>*</span></label>
                 <div>
-                    <label class="phonNum" for="phonNum">Phone Number</label>
-                    <input type="radio" name="cympcm" id="phonNum" value="phoneNumber" required >
-                </div>
-                <div>
-                    <label class="emailAdd" for="emailAdd">Email Address</label>
-                    <input type="radio" name="cympcm" id="emailAdd" value="email">
-                </div>
-                <div>
-                    <label class="faxCode" for="faxCode">Fax Code</label>
-                    <input type="radio" name="cympcm" id="faxCode" value="faxCode">
+                    <div>
+                        <label class="phonNum" for="phonNum">Phone Number</label>
+                        <input type="radio" name="cympcm" id="phonNum" value="phoneNumber" required >
+                    </div>
+                    <div>
+                        <label class="emailAdd" for="emailAdd">Email Address</label>
+                        <input type="radio" name="cympcm" id="emailAdd" value="email">
+                    </div>
+                    <div>
+                        <label class="faxCode" for="faxCode">Fax Code</label>
+                        <input type="radio" name="cympcm" id="faxCode" value="faxCode">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="part3">
-            <div class="eachDiv emailAddres">
+            <div>
                 <label class="emailAddres" for="emailAddres"><span>EMAIL ADDRESS</span></label>
                 <input type="email" name="emailAddres" id="emailAddres" placeholder="Enter your email address here">
             </div>
-            <div class="eachDiv fCode">
+            <div>
                 <label class="fCode" for="fCode"><span>FAX CODE</span></label>
                 <input type="text" name="fCode" id="fCode" placeholder="Enter your fax code here">
             </div>
-            <div class="eachDiv phNum">
+            <div>
                 <label class="phNum" for="phNum"><span>PHONE NUMBER</span></label>
                 <input type="number" name="phNum" id="phNum" placeholder="Enter your phone number here">
             </div>
-            <div class="eachDiv ptz">
+            <div>
                 <label class="ptz" for="ptz"><span>PREFERRED TIME ZONE</span></label>
                 <select name="ptz" id="ptz">
                     <option value="" disabled selected>Choose your timezone</option>
                 </select>
             </div>
-            <div class="eachDiv pfd">
+            <div>
                 <label class="pfd" for="pfd"><span>PREFERRED DATE</span></label>
                 <input type="date" name="pfd" id="pfd">
             </div>
-            <div class="eachDiv pft">
+            <div>
                 <label class="pft" for="pft"><span>PREFERRED TIME</span></label>
                 <input type="text" name="pft" id="pft" placeholder="Enter your preferred time range">
             </div>
-            <div class="eachDiv cmt">
+            <div>
                 <label class="cmt" for="cmt"><span>COMMENTS </span><span>*</span></label>
                 <textarea name="cmt" id="cmt" cols="30" rows="10" placeholder="Write any comments here" required></textarea>
             </div>
@@ -178,7 +180,7 @@
     </form>
 </section>
 
-<footer class="body7" id="contact-us">
+<footer class="body10" id="contact-us">
     <div class="logo2">
         <img class="image1" src="../images/8cbe3c9f44a2c4f322ca4956ff5a9452.png" />
         <div class="gshcs">Goshenspring Healthcare Services</div>
@@ -203,6 +205,7 @@
     </div>
     <div class="nav-bar">
         <nav>
+            <div class="line8"></div>
             <ul class="nav-list">
                 <li><a href="/index.html#home"><span class="link-text">Home</span></a></li>
                 <li><a href="/index.html#about-us"><span class="link-text">About Us</span></a></li>
@@ -221,5 +224,6 @@
 <script src="../javascript/sap.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.32/moment-timezone-with-data-10-year-range.min.js"></script>
+
 </body>
 </html>
