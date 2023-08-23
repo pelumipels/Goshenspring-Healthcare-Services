@@ -40,7 +40,7 @@ header {
     background: white;
 }
 .logo2,
-header .nav-bar .logo1 {
+.nav-bar .logo1 {
     width: 221px;
     height: 40px;
     justify-content: center ;
@@ -49,15 +49,15 @@ header .nav-bar .logo1 {
     display: flex;
 }
 .logo2 .image1,
-header .nav-bar .logo1 .image2 {
+.nav-bar .logo1 .image2 {
     width: 35px; 
     height: 35px;
 }
-header .cntct {
+.cntct {
     display: none;
 }
 .logo2 .gshcs,
-header .nav-bar .logo1 .gshcs2 {
+.nav-bar .logo1 .gshcs2 {
     width: 181px;
     height: 41px;
     color: #008000;
@@ -81,7 +81,7 @@ header .nav-bar .logo1 .gshcs2 {
 .nav_overlay.active {
     display: block;
 }
-header .nav-bar {
+.nav-bar {
     background-color: #008000;
     display: flex;
     flex-direction: column;
@@ -100,19 +100,19 @@ header .nav-bar {
 .nav-bar nav {
     background-color: white;
 }
-header .nav-bar .logo1 {
+.nav-bar .logo1 {
     width: 168px;
     height: auto;
     margin: 30px 0;
     margin-left: 0;
 }
-header .nav-bar .logo1 .gshcs2 {
+.nav-bar .logo1 .gshcs2 {
     font-size: 10px;
     line-height: 15px;
     text-align: start;
     height: auto;
 }
-header .nav-bar .closeButton {
+.nav-bar .closeButton {
     width: 30px;
     right: 0;
     top: 25px;
@@ -123,7 +123,7 @@ header .nav-bar .closeButton {
     justify-content: center;
     display: flex
 }
-header .nav-bar .closeButton .x {
+.nav-bar .closeButton .x {
     color: #FF0000;
     font-size: 20px;
     font-family: Roboto Flex;
@@ -132,7 +132,7 @@ header .nav-bar .closeButton .x {
     line-height: 20px;
     word-wrap: break-word
 }
-header .nav-bar .closeButton .close {
+.nav-bar .closeButton .close {
     color: #FF0000;
     font-size: 10px;
     font-family: Kadwa;
@@ -140,11 +140,9 @@ header .nav-bar .closeButton .close {
     line-height: 10px;
     word-wrap: break-word
 }
-.line8 {
+.line {
     width: auto;
-    height: 100%;
     border: 0.1rem #FDDA0D solid;
-    display: none;
 }
 .nav-bar .nav-list {
     position: relative;
@@ -182,15 +180,15 @@ header .nav-bar .closeButton .close {
     display: flex;
     color: black;
 }
-header .nav-bar.nav-toggle {
+.nav-bar.nav-toggle {
     width: 60%;
     right: 5%;
     transform: translateX(0%);
 }
-header .nav-bar menu.close {
+.nav-bar menu.close {
     transform: translateX(0%);
 }
-header .hamburgerMenu {
+.hamburgerMenu {
     width: auto;
     display: flex;
     position: relative;
@@ -199,21 +197,21 @@ header .hamburgerMenu {
     cursor: pointer;
     align-items: flex-end;
 }
-header .hamburgerMenu .menu {
+.hamburgerMenu .menu {
     display: inline-block;
     cursor: pointer;
     padding-top: 5px;
     padding-bottom: 10px;
 }
-header .hamburgerMenu .menu .icon {
+.hamburgerMenu .menu .icon {
     height: 2px;
     width: 20px;
     background-color: black;
     position: relative;
     transition: .5s ease all;
 }
-header .hamburgerMenu .menu .icon::before,
-header .hamburgerMenu .menu .icon::after {
+.hamburgerMenu .menu .icon::before,
+.hamburgerMenu .menu .icon::after {
     position: absolute;
     content: '';
     height: 2px;
@@ -221,22 +219,22 @@ header .hamburgerMenu .menu .icon::after {
     background-color: black;
     transition: .5s ease all;
 }
-header .hamburgerMenu .menu .icon::before {
+.hamburgerMenu .menu .icon::before {
     top: -5px;
     left: 0;
 }
-header .hamburgerMenu .menu .icon::after {
+.hamburgerMenu .menu .icon::after {
     bottom: -5px;
     left: 0;
 }
-header .hamburgerMenu .menu2 {
+.hamburgerMenu .menu2 {
     line-height: 100%;
     cursor: pointer;
 }
 .body1 {
     width: 90%;
 }
-section .heroSection {
+.heroSection {
     width: 100%;
     height: 280px;
     padding: 56px 0 45px 0;
@@ -250,7 +248,7 @@ section .heroSection {
     gap: 33px;
     display: flex;
 }
-section .heroSection .heroCopy {
+.heroSection .heroCopy {
     position: relative;
     margin-left: 15px;
     height: 193px;
@@ -260,10 +258,10 @@ section .heroSection .heroCopy {
     gap: 13px;
     display: inline-flex
 }
-section .heroSection .heroCopy .header {
+.heroSection .heroCopy .header {
     max-width: 500px;
 }
-section .heroSection .heroCopy .header .chance {
+.heroSection .heroCopy .header .chance {
     color: black;
     font-size: 25px;
     font-family: Kadwa;
@@ -271,7 +269,7 @@ section .heroSection .heroCopy .header .chance {
     line-height: 40px;
     word-wrap: break-word;
 }
-section .heroSection .heroCopy .header .qualityLife {
+.heroSection .heroCopy .header .qualityLife {
     color: #054B05;
     font-size: 25px;
     font-family: Kadwa;
@@ -279,7 +277,7 @@ section .heroSection .heroCopy .header .qualityLife {
     line-height: 40px;
     word-wrap: break-word;
 }
-section .heroSection .heroCopy .subHeader {
+.heroSection .heroCopy .subHeader {
     max-width: 500px;
     color: black;
     font-size: 14px;
@@ -288,7 +286,7 @@ section .heroSection .heroCopy .subHeader {
     line-height: 20px;
     word-wrap: break-word
 }
-section .heroSection .button {
+.heroSection .button {
     width: 195px;
     height: 50px;
     margin-left: 15px;
@@ -301,10 +299,10 @@ section .heroSection .button {
     display: inline-flex;
     transition: background-color 0.3s ease;
 }
-section .heroSection .button:hover {
+.heroSection .button:hover {
     background-color: rgba(253, 218, 13, 0.6);
 }
-section .heroSection .button .learnMore {
+.heroSection .button .learnMore {
     color: black;
     font-size: 16px;
     font-family: Kadwa;
@@ -312,15 +310,10 @@ section .heroSection .button .learnMore {
     line-height: 25px;
     word-wrap: break-word
 }
-section .line3 {
-    width: auto;
-    height: 100%;
-    border: 0.1rem #FDDA0D solid
-}
 .body2 {
     width: 90%;
 }
-section .welcomeToGoshenspring {
+.welcomeToGoshenspring {
     width: auto;
     height: auto;
     display: flex;
@@ -329,7 +322,7 @@ section .welcomeToGoshenspring {
     padding-top: 15px;
     background: white
 }
-section .welcomeToGoshenspring .left {
+.welcomeToGoshenspring .left {
     max-width: 604px;
     margin: 0 auto 0 auto;
     padding-left: 20px;
@@ -338,11 +331,11 @@ section .welcomeToGoshenspring .left {
     display: flex;
     flex-direction: column;
 }
-section .welcomeToGoshenspring .left .headerText {
+.welcomeToGoshenspring .left .headerText {
     width: 245px;
     height: auto;
 }
-section .welcomeToGoshenspring .left .headerText .welcome{
+.welcomeToGoshenspring .left .headerText .welcome{
     color: black;
     font-size: 20px;
     font-family: Kadwa;
@@ -350,7 +343,7 @@ section .welcomeToGoshenspring .left .headerText .welcome{
     line-height: 25px;
     word-wrap: break-word
 }
-section .welcomeToGoshenspring .left .headerText .ghs {
+.welcomeToGoshenspring .left .headerText .ghs {
     color: #008000;
     font-size: 20px;
     font-family: Kadwa;
@@ -359,7 +352,7 @@ section .welcomeToGoshenspring .left .headerText .ghs {
     line-height: 25px;
     word-wrap: break-word
 }
-section .welcomeToGoshenspring .left .copy  {
+.welcomeToGoshenspring .left .copy  {
     margin-top: 20px;
     width: 100%;
     color: black;
@@ -417,7 +410,7 @@ section .welcomeToGoshenspring .left .copy  {
     position: relative;
     right: 30px;
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay  {
+.welcomeToGoshenspring .scheduleAssessmentOverlay  {
     max-width: 610px;
     width: 100%;
     text-align: center;
@@ -426,7 +419,7 @@ section .welcomeToGoshenspring .scheduleAssessmentOverlay  {
     background: rgba(255, 255, 255, 0.70);
     box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.07)
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon  {
+.welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon  {
     max-width: 115px;
     height: auto;
     display: flex;
@@ -434,29 +427,29 @@ section .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon  {
     text-align: center;
     margin: 37px auto 0 auto;
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon .icon4  {
+.welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon .icon4  {
     width: 50px;
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment  {
+.welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment  {
     max-width: 372px;
     margin: 10px auto 0 auto;
     text-align: center;
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .sch  {
+.welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .sch  {
     color: black;
     font-size: 20px;
     font-family: Kadwa;
     font-weight: 700;
     word-wrap: break-word
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .ass  {
+.welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .ass  {
     color: #008000;
     font-size: 20px;
     font-family: Kadwa;
     font-weight: 700;
     word-wrap: break-word
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .oQTText  {
+.welcomeToGoshenspring .scheduleAssessmentOverlay .oQTText  {
     max-width: 514px;
     margin: 15px auto 0 auto;
     text-align: center;
@@ -467,12 +460,12 @@ section .welcomeToGoshenspring .scheduleAssessmentOverlay .oQTText  {
     line-height: 20px;
     word-wrap: break-word
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .button {
+.welcomeToGoshenspring .scheduleAssessmentOverlay .button {
     text-align: center;
     margin: 30px auto 50px auto;
     display: inline-flex
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore {
+.welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore {
     color: black;
     width: 227px;
     height: 50px;
@@ -491,18 +484,13 @@ section .welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore {
     display: inline-flex;
     word-wrap: break-word
 }
-section .welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore:hover {
+.welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore:hover {
     background-color: rgba(253, 218, 13, 0.6);
 }
 .body3 {
     width: 90%;
 }
-section .line4 {
-    width: auto;
-    height: 100%;
-    border: 0.1rem #FDDA0D solid
-}
-section .whatWeDo {
+.whatWeDo {
     height: auto;
     background: #008000;
     width: 100%;
@@ -512,13 +500,13 @@ section .whatWeDo {
     justify-content: flex-start;
     align-items: center;
 }
-section .whatWeDo .wwdt {
+.whatWeDo .wwdt {
     display: flex;
     flex-direction: column;
     gap: 5px;
     margin: 30px 0 0 20px;
 }
-section .whatWeDo .wwdt .headerText {
+.whatWeDo .wwdt .headerText {
     width: 88%;
     position: relative;
     margin-right: auto;
@@ -529,7 +517,7 @@ section .whatWeDo .wwdt .headerText {
     line-height: 30px;
     word-wrap: break-word
 }
-section .whatWeDo .wwdt .copy {
+.whatWeDo .wwdt .copy {
     width: 88%;
     color: white;
     font-size: 16px;
@@ -538,7 +526,7 @@ section .whatWeDo .wwdt .copy {
     line-height: 20px;
     word-wrap: break-word
 }
-section .whatWeDo .hgfg {
+.whatWeDo .hgfg {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -596,7 +584,7 @@ section .whatWeDo .hgfg {
     background-image: url(../images/72441c232307b7f190082203c2a41789.jpeg);
     background-position: 0 -72px;
 }
-section .whatWeDo .button {
+.whatWeDo .button {
     width: 202px;
     height: 50px;
     margin-bottom: 20px;
@@ -608,10 +596,10 @@ section .whatWeDo .button {
     display: flex;
     cursor: pointer;
 }
-section .whatWeDo .button:hover {
+.whatWeDo .button:hover {
     background-color: rgba(253, 218, 13, 0.6);
 }
-section .whatWeDo .button .learnMore {
+.whatWeDo .button .learnMore {
     color: #FDDA0D;
     font-size: 16px;
     font-family: Kadwa;
@@ -622,12 +610,7 @@ section .whatWeDo .button .learnMore {
 .body4 {
     width: 90%;
 }
-section .line5 {
-    width: auto;
-    height: 100%;
-    border: 0.1rem #FDDA0D solid
-}
-section .meetTheTeam {
+.meetTheTeam {
     width: 100%;
     background-image: url(../images/df87d90b710a9d400f3297c2d6d60f9f.jpeg);
     height: 450px;
@@ -637,13 +620,13 @@ section .meetTheTeam {
     display: flex;
     background-position: center;
 }
-section .meetTheTeam .ellipse3 {
+.meetTheTeam .ellipse3 {
     width: 250px;
     height: 250px;
     background: black;
     border-radius: 9999px
 }
-section .meetTheTeam .primaryButton {
+.meetTheTeam .primaryButton {
     width: 202px;
     height: 50px;
     position: absolute;
@@ -656,10 +639,10 @@ section .meetTheTeam .primaryButton {
     gap: 10px;
     display: inline-flex
 }
-section .meetTheTeam .primaryButton:hover {
+.meetTheTeam .primaryButton:hover {
     background-color: rgba(253, 218, 13, 0.6);
 }
-section .meetTheTeam .primaryButton .learnMore {
+.meetTheTeam .primaryButton .learnMore {
     color: black;
     font-size: 20px;
     font-family: Kadwa;
@@ -670,12 +653,7 @@ section .meetTheTeam .primaryButton .learnMore {
 .body5 {
     width: 90%;
 }
-section .line6 {
-    width: auto;
-    height: 100%;
-    border: 0.1rem #FDDA0D solid
-}
-section .oCR {
+.oCR {
     width: auto;
     height: auto;
     display: flex;
@@ -683,7 +661,7 @@ section .oCR {
     justify-content: center;
     background: #F3FDF3
 }
-section .oCR .oC {
+.oCR .oC {
     max-width: 536px;
     width: auto;
     height: auto;
@@ -691,11 +669,11 @@ section .oCR .oC {
     flex-direction: column;
     margin: 50px auto 0 auto;
 }
-section .oCR .oC .oCt {
+.oCR .oC .oCt {
     height: auto;
     width: 190px;
 }
-section .oCR .oC .oCt .oCnt {
+.oCR .oC .oCt .oCnt {
     color: black;
     font-size: 20px;
     font-family: Kadwa;
@@ -703,7 +681,7 @@ section .oCR .oC .oCt .oCnt {
     line-height: 30px;
     word-wrap: break-word
 }
-section .oCR .oC .oCt .mS {
+.oCR .oC .oCt .mS {
     color: #008000;
     font-size: 16px;
     font-family: Kadwa;
@@ -711,7 +689,7 @@ section .oCR .oC .oCt .mS {
     line-height: 25px;
     word-wrap: break-word
 }
-section .oCR .oC .copy {
+.oCR .oC .copy {
     margin-top: 20px;
     width: 100%;
     color: black;
@@ -721,7 +699,7 @@ section .oCR .oC .copy {
     line-height: 25px;
     word-wrap: break-word;
 }
-section .oCR .sAO {
+.oCR .sAO {
     max-width: 648px;
     width: 100%;
     text-align: center;
@@ -730,7 +708,7 @@ section .oCR .sAO {
     background: rgba(255, 255, 255, 0.70);
     box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.07)
 }
-section .oCR .sAO .mail {
+.oCR .sAO .mail {
     max-width: 150px;
     height: auto;
     display: flex;
@@ -738,10 +716,10 @@ section .oCR .sAO .mail {
     text-align: center;
     margin: 37px auto 0 auto ;
 }
-section .oCR .sAO .mail .icon5 {
+.oCR .sAO .mail .icon5 {
     width: 50px;
 }
-section .oCR .sAO .headerText {
+.oCR .sAO .headerText {
     max-width: 254px;
     margin: 10px auto 0 auto;
     text-align: center;
@@ -751,7 +729,7 @@ section .oCR .sAO .headerText {
     font-weight: 700;
     word-wrap: break-word
 }
-section .oCR .sAO .copy {
+.oCR .sAO .copy {
     max-width: 519px;
     margin: 15px auto 0 auto;
     text-align: center;
@@ -762,12 +740,12 @@ section .oCR .sAO .copy {
     line-height: 20px;
     word-wrap: break-word
 }
-section .oCR .sAO .button {
+.oCR .sAO .button {
     text-align: center;
     margin: 30px auto 50px auto;
     display: inline-flex
 }
-section .oCR .sAO .button .learnMore{
+.oCR .sAO .button .learnMore{
     color: black;
     width: 227px;
     height: 50px;
@@ -786,18 +764,13 @@ section .oCR .sAO .button .learnMore{
     display: inline-flex;
     word-wrap: break-word;
 }
-section .oCR .sAO .button .learnMore:hover {
+.oCR .sAO .button .learnMore:hover {
     background-color: rgba(253, 218, 13, 0.6);
 }
 .body6 {
     width: 90%;
 }
-section .line7 {
-    width: auto;
-    height: 100%;
-    border: 0.1rem #FDDA0D solid
-}
-section .feedback {
+.feedback {
     width: 100%;
     background-image: url(../images/e008509d51bf9c1daa62eefc7bd6c33c.jpeg);
     height: 450px;
@@ -814,7 +787,7 @@ section .feedback {
     background-color: rgba(0, 0, 0, 0.4);
     display: block;
 }
-section .feedback .sAO {
+.feedback .sAO {
     width: 90%;
     max-width: 650px;
     height: 360px;
@@ -828,20 +801,20 @@ section .feedback .sAO {
     background: white;
     box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.07);
 }
-section .feedback .sAO .bulbIcon {
+.feedback .sAO .bulbIcon {
     height: 50px;
     margin-top: 30px;
     max-width: 100px;
     background-image: url(../images/bulb.svg);
     background-size: 50px;
 }
-section .feedback .sAO .bulbIcon .ellipse4 {
+.feedback .sAO .bulbIcon .ellipse4 {
     width: 50px;
     max-width: 150px;
     border-radius: 9999px;
     border: 1.50px #008000 solid
 }
-section .feedback .sAO .headerText {
+.feedback .sAO .headerText {
     color: black;
     max-width: 328px;
     font-size: 20px;
@@ -851,7 +824,7 @@ section .feedback .sAO .headerText {
     font-weight: 700;
     word-wrap: break-word
 }
-section .feedback .sAO .copy {
+.feedback .sAO .copy {
     max-width: 467px;
     text-align: center;
     color: black;
@@ -861,10 +834,10 @@ section .feedback .sAO .copy {
     line-height: 20px;
     word-wrap: break-word
 }
-section .feedback .sAO .button {
+.feedback .sAO .button {
     margin-top: 50px;
 }
-section .feedback .sAO .button .learnMore {
+.feedback .sAO .button .learnMore {
     color: black;
     font-size: 16px;
     font-family: Kadwa;
@@ -883,7 +856,7 @@ section .feedback .sAO .button .learnMore {
     display: flex;
     word-wrap: break-word
 }
-section .feedback .sAO .button .learnMore:hover {
+.feedback .sAO .button .learnMore:hover {
     background-color: rgba(253, 218, 13, 0.6);
 }
 .body7,
@@ -1301,15 +1274,15 @@ textarea {
     background-color: rgba(253, 218, 13, 0.6);
 }
 @media screen and (min-width: 450px) and (max-width: 877px) {
-    header .nav-bar .logo1 {
+    .nav-bar .logo1 {
         margin-left: 30px;
     }
-    header .nav-bar .closeButton {
+    .nav-bar .closeButton {
         margin-right: 30px;
     }
 }
 @media screen and (max-width: 877px) {
-    section .heroSection1 {
+    .heroSection1 {
         display: none;
     }
     .nav-bar nav .nav-list li:first-child a {
@@ -1322,7 +1295,7 @@ textarea {
         line-height: 20px;
         width: auto;
     }
-    section .whatWeDo .hgfg .headerText {
+    .whatWeDo .hgfg .headerText {
         width: auto;
     }
     .gshcs2 {
@@ -1340,17 +1313,17 @@ textarea {
     }
 }
 @media screen and (min-width: 500px) {
-    section .welcomeToGoshenspring {
+    .welcomeToGoshenspring {
         background-color: #F3FDF3;
     }
-    section .welcomeToGoshenspring .left {
+    .welcomeToGoshenspring .left {
         padding-left: 0;
     }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay  {
+    .welcomeToGoshenspring .scheduleAssessmentOverlay  {
         border-radius: 20px;
         margin-bottom: 50px;
     }
-    section .oCR .sAO {
+    .oCR .sAO {
         border-radius: 20px;
         margin-bottom: 50px;
     }
@@ -1361,28 +1334,28 @@ textarea {
     }
 }
 @media screen and (min-width: 550px) {
-    section .heroSection {
+    .heroSection {
         background-size: 650px;
     }
 }
 @media screen and (min-width: 700px) {
-    section .heroSection {
+    .heroSection {
         background-size: 800px;
     }
-    section .welcomeToGoshenspring .left .headerText {
+    .welcomeToGoshenspring .left .headerText {
         width: 245px;
     }
 }
 @media screen and (min-width: 722px) {
-    section .whatWeDo .wwdt {
+    .whatWeDo .wwdt {
         margin-left: 0;
         text-align: center;
     }
-    section .whatWeDo .wwdt .headerText,
-    section .whatWeDo .wwdt .copy {
+    .whatWeDo .wwdt .headerText,
+    .whatWeDo .wwdt .copy {
         width: 100%;
     }
-    section .feedback .sAO {
+    .feedback .sAO {
         border-radius: 20px;
     }
 }
@@ -1395,17 +1368,20 @@ textarea {
         flex-wrap: wrap;
         padding-top: 30px;
     }
-    header .hamburgerMenu {
+    .hamburgerMenu {
         display: none;
     }
-    header .nav-bar {
+    nav {
+        width: 100%;
+    }
+    .nav-bar {
         transform: translateX(0%);
         height: auto;
         position: relative;
         width: 100%;
     }
-    header .nav-bar .logo1,
-    header .nav-bar .closeButton {
+    .nav-bar .logo1,
+    .nav-bar .closeButton {
         display: none;
     }
     .nav_overlay.active {
@@ -1435,7 +1411,7 @@ textarea {
         text-transform: uppercase;
         word-wrap: break-word;
     }
-    header .cntct {
+    .cntct {
         margin-right: 30px;
         margin-bottom: 30px;
         height: auto;
@@ -1444,24 +1420,24 @@ textarea {
         align-self: flex-start;
         flex-direction: column;
     }
-    header .cntct .lctn,
-    header .cntct .phnm {
+    .cntct .lctn,
+    .cntct .phnm {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 6px;
     }
-    header .cntct .lctn .mrkpn,
-    header .cntct .phnm .pnh {
+    .cntct .lctn .mrkpn,
+    .cntct .phnm .pnh {
         display: flex;
     }
-    header .cntct .lctn .mrkpn .icon11,
-    header .cntct .phnm .pnh .icon12 {
+    .cntct .lctn .mrkpn .icon11,
+    .cntct .phnm .pnh .icon12 {
         width: 20px;
         height: 20px;
     }
-    header .cntct .lctn .fldvwln, 
-    header .cntct .phnm .cllnm {
+    .cntct .lctn .fldvwln, 
+    .cntct .phnm .cllnm {
         color: #333333;
         font-size: 18px;
         font-family: Kadwa;
@@ -1472,9 +1448,6 @@ textarea {
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
-    }
-    .line8 {
-        display: block;
     }
     .nav-bar .nav-list {
         width: 100%;
@@ -1548,7 +1521,7 @@ textarea {
     .body1, .body2, .body3, .body4, .body5, .body6, .body7, .body10 {
         width: 100%;
     }
-    section .heroSection {
+    .heroSection {
         height: 796px;
         justify-content: space-around;
         gap: 50px;
@@ -1556,43 +1529,43 @@ textarea {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    section .heroSection .heroCopy{
+    .heroSection .heroCopy{
         gap: 20px;
         margin-left: 70px;
         margin-top: 0;
     }
-    section .heroSection .heroCopy .header {
+    .heroSection .heroCopy .header {
         max-width: 850px;
     }
-    section .heroSection .heroCopy .subHeader {
+    .heroSection .heroCopy .subHeader {
         font-size: 25px;
         line-height: 35px;
         margin-top: 50px;
         max-width: 824px;
     }
-    section .heroSection .heroCopy .header .chance,
-    section .heroSection .heroCopy .header .qualityLife {
+    .heroSection .heroCopy .header .chance,
+    .heroSection .heroCopy .header .qualityLife {
         height: 100%;
         font-size: 60px;
         line-height: 80px;
     }
-    section .heroSection .button {
+    .heroSection .button {
         width: 310px;
         height: 75px;
         margin-left: 70px;
     }
-    section .heroSection .button .learnMore {
+    .heroSection .button .learnMore {
         font-size: 20px;
     }
-    section .welcomeToGoshenspring .left .headerText {
+    .welcomeToGoshenspring .left .headerText {
         width: 492px;
         line-height: 50px;
     }
-    section .welcomeToGoshenspring .left .headerText .welcome,
-    section .welcomeToGoshenspring .left .headerText .ghs {
+    .welcomeToGoshenspring .left .headerText .welcome,
+    .welcomeToGoshenspring .left .headerText .ghs {
         font-size: 35px;
     }
-    section .welcomeToGoshenspring .left .copy {
+    .welcomeToGoshenspring .left .copy {
         font-size: 20px;
         font-weight: 400;
         line-height: 35px;
@@ -1616,40 +1589,40 @@ textarea {
     .tertiaryButton .frame6 .icon3 {
         right: 40px;
     }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .oQTText {
+    .welcomeToGoshenspring .scheduleAssessmentOverlay .oQTText {
         width: 300px;
         margin: 0 auto;
     }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon .icon4  {
+    .welcomeToGoshenspring .scheduleAssessmentOverlay .calendarIcon .icon4  {
         width: 100%;
     }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .sch,
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .ass {
+    .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .sch,
+    .welcomeToGoshenspring .scheduleAssessmentOverlay .scheduleAnAssesment .ass {
         font-size: 30px;
     }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .oQTText {
+    .welcomeToGoshenspring .scheduleAssessmentOverlay .oQTText {
         width: 100%;
         font-size: 25px;
         line-height: 45px;
     }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .button {
+    .welcomeToGoshenspring .scheduleAssessmentOverlay .button {
         width: 100%;
     }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore {
+    .welcomeToGoshenspring .scheduleAssessmentOverlay .learnMore {
         width: 100%;
         height: 75px;
         font-size: 20px;
     }
-    section .whatWeDo {
+    .whatWeDo {
         gap: 40px;
     }
-    section .whatWeDo .wwdt {
+    .whatWeDo .wwdt {
         gap: 30px;
     }
-    section .whatWeDo .wwdt .headerText {
+    .whatWeDo .wwdt .headerText {
         font-size: 35px;
     }
-    section .whatWeDo .wwdt .copy {
+    .whatWeDo .wwdt .copy {
         font-size: 25px;
     }
     .frame15 {
@@ -1661,81 +1634,81 @@ textarea {
     .mSW {
         font-size: 20px;
     }
-    section .whatWeDo .button {
+    .whatWeDo .button {
         width: 310px;
         height: 75px;
         margin-top: 20px;
         margin-bottom: 40px;
     }
-    section .whatWeDo .button .learnMore {
+    .whatWeDo .button .learnMore {
         font-size: 20px;
     }
-    section .meetTheTeam {
+    .meetTheTeam {
         height: 811px;
     }
-    section .meetTheTeam .ellipse3 {
+    .meetTheTeam .ellipse3 {
         width: 560px;
         height: 560px;
     }
-    section .meetTheTeam .primaryButton {
+    .meetTheTeam .primaryButton {
         width: 310px;
         height: 75px;
     }
-    section .meetTheTeam .primaryButton .learnMore {
+    .meetTheTeam .primaryButton .learnMore {
         font-size: 25px;
     }
-    section .oCR .oC {
+    .oCR .oC {
         height: 407px;
         justify-content: center;
     }
-    section .oCR .oC .oCt {
+    .oCR .oC .oCt {
         width: 333px;
     }
-    section .oCR .oC .oCt .oCnt {
+    .oCR .oC .oCt .oCnt {
         font-size: 35px;
     }
-    section .oCR .oC .oCt .mS {
+    .oCR .oC .oCt .mS {
         font-size: 25px;
         line-height: 50px;
     }
-    section .oCR .oC .copy {
+    .oCR .oC .copy {
         font-size: 20px;
         line-height: 40px;
     }
-    section .oCR .oC .tertiaryButton {
+    .oCR .oC .tertiaryButton {
         height: auto;
         margin-top: 40px;
     }
-    section .oCR .sAO .mail .icon5 {
+    .oCR .sAO .mail .icon5 {
         width: 100%;
     }
-    section .oCR .sAO .headerText {
+    .oCR .sAO .headerText {
         font-size: 30px;
     }
-    section .oCR .sAO .copy {
+    .oCR .sAO .copy {
         width: 100%;
         font-size: 25px;
         line-height: 50px;
     }
-    section .oCR .sAO .button {
+    .oCR .sAO .button {
         width: 100%;
     }
-    section .oCR .sAO .button .learnMore{
+    .oCR .sAO .button .learnMore{
         width: 100%;
         height: 75px;
         font-size: 20px;
     }
-    section .feedback {
+    .feedback {
         height: 741px;
     }
     .fb_overlay {
         width: 100%;
         height: 741px;
     }
-    section .feedback .sAO {
+    .feedback .sAO {
         height: 592.8px;
     }
-    section .feedback .sAO .bulbIcon {
+    .feedback .sAO .bulbIcon {
         height: 100px;
         margin-top: 60px;
         width: 100px;
@@ -1744,22 +1717,22 @@ textarea {
         justify-content: center;
         align-items: center;
     }
-    section .feedback .sAO .bulbIcon .ellipse4 {
+    .feedback .sAO .bulbIcon .ellipse4 {
         width: 150px;
     }
-    section .feedback .sAO .headerText {
+    .feedback .sAO .headerText {
         margin-top: 20px;
         font-size: 30px;
     }
-    section .feedback .sAO .copy {
+    .feedback .sAO .copy {
         font-size: 25px;
         line-height: 50px;
     }
-    section .feedback .sAO .button {
+    .feedback .sAO .button {
         margin-top: 20px;
         width: 100%;
     }
-    section .feedback .sAO .button .learnMore {
+    .feedback .sAO .button .learnMore {
         width: 100%;
         height: 75px;
         font-size: 20px;
@@ -1803,12 +1776,12 @@ textarea {
         margin: 80px 800px;
         padding: 50px 30px;
     }
-    section .heroSection1 {
+    .heroSection1 {
         display: flex;
         width: auto;
         height: auto;
     }
-    section .heroSection1 img {
+    .heroSection1 img {
         width: 100%;
         height: 100%;
     }
@@ -1963,13 +1936,13 @@ textarea {
         font-size: 30px;
         line-height: 40px;
     }
-    header .cntct .lctn .mrkpn .icon11,
-    header .cntct .phnm .pnh .icon12 {
+    .cntct .lctn .mrkpn .icon11,
+    .cntct .phnm .pnh .icon12 {
         width: 30px;
         height: 30px;
     }
-    header .cntct .lctn .fldvwln,
-    header .cntct .phnm .cllnm {
+    .cntct .lctn .fldvwln,
+    .cntct .phnm .cllnm {
         font-size: 25px;
     }
     footer .location,
@@ -1999,45 +1972,45 @@ textarea {
     }
 }
 @media screen and (min-width: 1230px) {
-    section .welcomeToGoshenspring {
+    .welcomeToGoshenspring {
         flex-direction: row;
         justify-content: space-around;
         padding-top: 0;
         margin-bottom: 70px;
         margin-top: 70px;
     }
-    section .welcomeToGoshenspring .left {
+    .welcomeToGoshenspring .left {
         justify-content: space-between;
     }
-    section .welcomeToGoshenspring .scheduleAssessmentOverlay {
+    .welcomeToGoshenspring .scheduleAssessmentOverlay {
         margin-bottom: 0;
         margin-top: 30px;
     }
-    section .whatWeDo .hgfg {
+    .whatWeDo .hgfg {
         justify-items: center;
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr; 
         gap: 70px 120px;
     }
-    section .oCR {
+    .oCR {
         flex-direction: row;
         justify-content: center;
         padding-top: 0;
         margin-bottom: 70px;
         margin-top: 70px;
     }
-    section .oCR .oC {
+    .oCR .oC {
         margin-top: 150px;
     }
-    section .oCR .oC .tertiaryButton {
+    .oCR .oC .tertiaryButton {
         margin-top: 80px;
     }
-    section .feedback {
+    .feedback {
         background-position: 0 -100px;
     }
 }
 @media screen and (min-width: 1300px) {
-    section .heroSection {
+    .heroSection {
         background-size: 1600px;
     }
 }
